@@ -1,0 +1,33 @@
+/* Background */
+.clients-section {
+  background-color: #092acc;
+  color: #ccc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 20px;
+}
+
+/* h1 styling */
+.clients-section h1 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+/* Having two sides for both parts */
+.clients-section .left-content,
+.clients-section .right-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/*Styling the left and right side */
+.clients-section .right-content h1 {
+  text-align: left;
+  margin-top: 0;
+}
+
+/*# sourceMappingURL=welcome.css.map */

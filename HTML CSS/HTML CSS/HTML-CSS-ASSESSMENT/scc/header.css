@@ -1,0 +1,74 @@
+/* General Header Styling */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+}
+
+/* Logo Styling */
+.logo img {
+  height: 50px;
+}
+
+/* Header Buttons Styling */
+.header-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.support-btn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.contact-btn {
+  background-color: #28a745;
+  color: #fff;
+}
+
+/* Search Bar Styling */
+.search-bar {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.search-bar input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+/* Mobile Menu Icon */
+.menu-icon {
+  display: none; /* Hidden by default */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block; /* Show menu icon */
+    font-size: 24px;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */
