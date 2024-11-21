@@ -1,0 +1,70 @@
+/* Arrow banner */
+.arrow-banner-section {
+  position: relative;
+  background-color: #1436e1;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* Text in banner */
+.banner-text {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 32px; /* Adjust as necessary */
+  font-weight: 700; /* Bold title */
+  margin-bottom: 20px; /* Space below the banner text */
+}
+
+.banner-text h1 {
+  margin: 0;
+}
+
+/* Adding positions to it*/
+.banner-text::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #1436e1;
+}
+
+/* Adding positions for pictures */
+.partners-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 50px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* My image styling */
+.partners-section img {
+  height: auto;
+  max-height: 100px;
+  object-fit: contain;
+  flex: 1 1 16%;
+  margin: 0 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .partners-section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .partners-section img {
+    flex: 1 1 40%;
+    margin-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=casestudy.css.map */
