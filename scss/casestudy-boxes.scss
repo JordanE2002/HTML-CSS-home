@@ -53,9 +53,12 @@
 
 /* Text inside the flexbox item */
 .flexbox-item p {
-    font-size: 1rem; 
-    color: #333645; 
-    margin: 0; 
+   font-weight: 600;
+   font-size: .8125rem;
+   line-height: 1.375rem;
+   font-family: Poppins, sans-serif;
+   letter-spacing: .4px;
+    
 }
 
 /* Responsive */
