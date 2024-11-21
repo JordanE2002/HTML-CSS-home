@@ -1,4 +1,4 @@
-/* Flexbox container for the case srtudies */
+/* Flexbox container for the case studies */
 .flexbox-container {
     display: flex;
     justify-content: center; 
@@ -17,56 +17,58 @@
     width: 30%; 
     background-color: #fff; 
     padding: 10px;
-    border-radius: 8px; 
+    border-radius: 0; /* Removed rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     text-align: center; 
+    position: relative; /* Enable positioning for hover adjustments */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
 }
 
-/* My images display */
+/* Hover effect for flexbox items */
+.flexbox-item:hover {
+    transform: translateY(-10px); /* Move the box up by 10px */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Add more shadow on hover */
+}
+
+/* Image styling */
 .flexbox-item img {
     width: 100%; 
     height: auto;
     object-fit: cover; 
-    border-radius: 8px; 
+    border-radius: 0; /* No rounded corners for the image */
     margin-bottom: 10px; 
 }
 
-
-//Placeholder for variables later
+/* Headings */
 .flexbox-item h3 {
-   color: #db8c0d;
-   font-weight: 600;
-   font-size: 1rem;
-   line-height: 1.5rem;
-   font-family: inherit;
-  
-}
-
-.flexbox-item:nth-child(2) h3 {
-    color: #926fb1;;
+    color: #db8c0d;
     font-weight: 600;
     font-size: 1rem;
     line-height: 1.5rem;
     font-family: inherit;
 }
 
+.flexbox-item:nth-child(2) h3 {
+    color: #926fb1;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: inherit;
+}
 
 /* Text inside the flexbox item */
 .flexbox-item p {
    font-weight: 600;
-   font-size: .8125rem;
+   font-size: 0.8125rem;
    line-height: 1.375rem;
    font-family: Poppins, sans-serif;
-   letter-spacing: .4px;
-    
+   letter-spacing: 0.4px;
 }
 
-
-//More placeholders But for buttons
+/* Buttons */
 .button-casestudy {
-    
-    font-family: Poppins,sans-serif;
-    letter-spacing: .4px;
+    font-family: Poppins, sans-serif;
+    letter-spacing: 0.4px;
     box-sizing: border-box;
     background: transparent;
     text-decoration: none;
@@ -88,58 +90,20 @@
     background-color: #db8c0d;
     border-color: #db8c0d;
     font-weight: 400;
-  }
-
-  .flexbox-item:nth-child(2) .button-casestudy {
-    
-    font-family: Poppins,sans-serif;
-    letter-spacing: .4px;
-    box-sizing: border-box;
-    background: transparent;
-    text-decoration: none;
-    display: inline-block;
-    margin-bottom: 0;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    background-image: none;
-    border: 1px solid transparent;
-    user-select: none;
-    height: auto;
-    line-height: 35px;
-    padding: 5px 15px;
-    text-transform: uppercase;
-    font-size: 1.063rem;
-    border-radius: 3px;
-    white-space: normal;
-    color: #fff;
-    background-color: #926fb1;
-    border-color: #926fb1;
-    font-weight: 400;
 }
 
-/* Style for the grey line */
+.flexbox-item:nth-child(2) .button-casestudy {
+    background-color: #926fb1;
+    border-color: #926fb1;
+}
+
+/* Grey line */
 .horizontial-line {
     width: 80%; 
     height: 1px; 
     background-color: #ddd; 
     margin: 15px auto; 
     border: none;
-}
-
-/* Flexbox container for the case study box */
-.flexbox-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    position: relative; /* Enable positioning for child elements */
 }
 
 /* Container for the logo and the posted info */
@@ -152,16 +116,16 @@
     width: 100%;
 }
 
-/* Adjusing the flexboxes to be positioned right*/
+/* Logo adjustments */
 .flexbox-logo {
-    margin-right: 10p
+    margin-right: 10px;
 }
 
-/* Making sure logo size is kept*/
+/* Logo image styling */
 .flexbox-logo img {
-    width: 100%; 
-    height: 100%;
-    border-radius: 100%; 
+    width: 40px; /* Fixed size for the logo */
+    height: auto;
+    border-radius: 100%; /* Circular logo */
     object-fit: contain; 
 }
 
@@ -172,17 +136,15 @@
     font-family: Poppins, sans-serif;
 }
 
-
-/* Responsive */
+/* Responsive Design */
 @media (max-width: 768px) {
     .flexbox-container {
         flex-direction: column; 
         align-items: center; 
-    
+    }
 
     .flexbox-item {
         width: 80%;
         margin-bottom: 20px; 
-    }
     }
 }
