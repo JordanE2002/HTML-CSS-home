@@ -109,13 +109,58 @@
   font-weight: 400;
 }
 
-/* Style for the separator line */
+/* Style for the grey line */
 .horizontial-line {
-  width: 80%; /* Line width relative to the card */
-  height: 1px; /* Thin line */
-  background-color: #ddd; /* Light gray line */
-  margin: 15px auto; /* Add space above and below, center the line */
+  width: 80%;
+  height: 1px;
+  background-color: #ddd;
+  margin: 15px auto;
   border: none;
+}
+
+/* Flexbox container for the case study box */
+.flexbox-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative; /* Enable positioning for child elements */
+}
+
+/* Container for the logo and the posted info */
+.flexbox-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 15px;
+  margin-left: 20%;
+  width: 100%;
+}
+
+/* Adjusing the flexboxes to be positioned right*/
+.flexbox-logo {
+  margin-right: 10p;
+}
+
+/* Making sure logo size is kept*/
+.flexbox-logo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  object-fit: contain;
+}
+
+/* Author text */
+.posted-info p {
+  font-size: 0.9rem;
+  margin: 0;
+  font-family: Poppins, sans-serif;
 }
 
 /* Responsive */
