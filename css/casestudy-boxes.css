@@ -56,6 +56,59 @@
   letter-spacing: 0.4px;
 }
 
+.button-casestudy {
+  font-family: Poppins, sans-serif;
+  letter-spacing: 0.4px;
+  box-sizing: border-box;
+  background: transparent;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  user-select: none;
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  white-space: normal;
+  color: #fff;
+  background-color: #db8c0d;
+  border-color: #db8c0d;
+  font-weight: 400;
+}
+
+.flexbox-item:nth-child(2) .button-casestudy {
+  font-family: Poppins, sans-serif;
+  letter-spacing: 0.4px;
+  box-sizing: border-box;
+  background: transparent;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  user-select: none;
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  white-space: normal;
+  color: #fff;
+  background-color: #926fb1;
+  border-color: #926fb1;
+  font-weight: 400;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .flexbox-container {
