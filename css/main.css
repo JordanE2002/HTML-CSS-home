@@ -645,6 +645,15 @@ body {
   font-weight: 400;
 }
 
+/* Style for the separator line */
+.horizontial-line {
+  width: 80%; /* Line width relative to the card */
+  height: 1px; /* Thin line */
+  background-color: #ddd; /* Light gray line */
+  margin: 15px auto; /* Add space above and below, center the line */
+  border: none;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .flexbox-container {
