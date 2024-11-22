@@ -1,0 +1,33 @@
+/* Flexbox container for the case studies */
+.partnerbox-container {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    align-items: stretch; 
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Flexbox picture styling */
+.partnerbox-item {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    width: 30%; 
+    background-color: #fff; 
+    padding: 10px;
+    border-radius: 0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    position: relative; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.partnerbox-item img {
+    width: 100%; 
+    height: auto;
+    object-fit: cover; 
+    border-radius: 0; 
+    margin-bottom: 10px; 
+}
