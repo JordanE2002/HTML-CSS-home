@@ -1,0 +1,127 @@
+/* Flexbox container for the services boxes */
+.service-flexbox-container {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;  
+    gap: 20px; 
+    padding: 20px;
+}
+
+/* Flexbox styling for all boxes */
+.service-flexbox-item {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    background-color: #fff; 
+    padding: 15px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    position: relative; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+.service-flexbox-item:nth-child(-n+3) {
+    width: 30%; 
+}
+
+
+.service-flexbox-item:nth-child(n+4) {
+    width: 22%; 
+}
+
+.service-flexbox-logo-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+.service-flexbox-logo img {
+    width: auto;
+    max-width: 120px;
+    height: auto;
+    object-fit: contain; 
+    margin: 0 auto; 
+}
+
+/* h3 styling */
+.service-flexbox-item h3 {
+    color: #db8c0d;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: inherit;
+}
+/*Paragraaph styling */
+.service-flexbox-item p {
+   font-weight: 600;
+   font-size: 0.8125rem;
+   line-height: 1.375rem;
+   font-family: Poppins, sans-serif;
+   letter-spacing: 0.4px;
+}
+
+/* Button styling */
+.button-service {
+    font-family: Poppins, sans-serif;
+    letter-spacing: 0.4px;
+    box-sizing: border-box;
+    background: transparent;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px; /* Space between text and button */
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    user-select: none;
+    height: auto;
+    line-height: 35px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-size: 1.063rem;
+    border-radius: 3px;
+    white-space: normal;
+    color: #fff;
+    background-color: #db8c0d;
+    border-color: #db8c0d;
+    font-weight: 400;
+}
+
+/* Hover for flexbox items */
+.service-flexbox-item:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-flexbox-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+        
+    .service-flexbox-item {
+        width: 90%; 
+        margin-bottom: 20px; 
+    }
+
+    .service-flexbox-item:nth-child(-n+3) {
+        width: 80%;
+    }
+
+    .service-flexbox-item:nth-child(n+4) {
+        width: 90%;
+    }
+
+    .service-flexbox-logo img {
+        max-width: 100px; 
+    }
+}
