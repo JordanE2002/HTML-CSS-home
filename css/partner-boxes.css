@@ -1,5 +1,5 @@
-/* Flexbox container for the partner logos */
-.partner-flexbox-container {
+/* Flexbox container for the case studies */
+.partnerbox-container {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -8,15 +8,15 @@
   padding: 20px;
 }
 
-/* Flexbox item styling for each partner */
-.partner-flexbox-item {
+/* Flexbox picture styling */
+.partnerbox-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 30%;
   background-color: #fff;
-  padding: 15px; /* Adjusted padding */
+  padding: 10px;
   border-radius: 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -24,104 +24,12 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Flexbox styling for the logo container */
-.partner-flexbox-item-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%; /* Keep full width for centering */
-  padding: 10px; /* Reduced padding for better fit */
-  box-shadow: none; /* No shadow for the logo container */
-  background-color: transparent; /* Transparent background */
-}
-
-/* Logo styling inside the partner item */
-.partner-flexbox-item-logo img {
-  width: auto;
-  max-width: 100px; /* Reduced max width for smaller logos */
-  height: auto;
-  object-fit: contain; /* Maintain aspect ratio */
-  margin: 0 auto; /* Center horizontally */
-}
-
-/* Flexbox picture styling for other items */
-.partner-flexbox-item img {
+.partnerbox-item img {
   width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 0;
   margin-bottom: 10px;
-}
-
-/* Hover effect for flexbox items */
-.partner-flexbox-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-}
-
-/* Headings */
-.partner-flexbox-item h3 {
-  color: #db8c0d;
-  font-weight: 600;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-family: inherit;
-}
-
-/* Text inside the partner-flexbox item */
-.partner-flexbox-item p {
-  font-weight: 600;
-  font-size: 0.8125rem;
-  line-height: 1.375rem;
-  font-family: Poppins, sans-serif;
-  letter-spacing: 0.4px;
-}
-
-/* Buttons */
-.button-partner {
-  font-family: Poppins, sans-serif;
-  letter-spacing: 0.4px;
-  box-sizing: border-box;
-  background: transparent;
-  text-decoration: none;
-  display: inline-block;
-  margin-bottom: 0;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  border: 1px solid transparent;
-  user-select: none;
-  height: auto;
-  line-height: 35px;
-  padding: 5px 15px;
-  text-transform: uppercase;
-  font-size: 1.063rem;
-  border-radius: 3px;
-  white-space: normal;
-  color: #fff;
-  background-color: #db8c0d;
-  border-color: #db8c0d;
-  font-weight: 400;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .partner-flexbox-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .partner-flexbox-item {
-    width: 90%; /* Flexbox item takes most of the screen width */
-    margin-bottom: 20px;
-  }
-  .partner-flexbox-item-logo {
-    width: 80%; /* Adjusted for responsiveness */
-    padding: 10px; /* Match the reduced padding */
-  }
-  .partner-flexbox-item-logo img {
-    max-width: 80px; /* Smaller logos on smaller screens */
-  }
 }
 
 /*# sourceMappingURL=partner-boxes.css.map */
