@@ -1,3 +1,121 @@
+/* General Navbar Styling */
+.navbar {
+  background-color: #333; /* Dark background */
+  padding: 10px 0;
+  text-align: center;
+}
 
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item {
+  position: relative;
+  margin: 0 15px;
+}
+
+/* Links Styling */
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  font-size: 16px;
+}
+
+.nav-item:hover a {
+  background-color: #444;
+}
+
+/* Dropdown Menu */
+.nav-item.dropdown {
+  position: relative;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block; /* Show dropdown when hovering over the parent item */
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 0 0 5px 5px;
+  min-width: 180px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  opacity: 0; /* Start with invisible dropdown */
+  visibility: hidden;
+  transform: translateY(20px); /* Slide down effect */
+  transition: opacity 0.3s ease, visibility 0s 0.3s, transform 0.3s ease;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0); /* Dropdown appears in place */
+}
+
+.dropdown-menu li {
+  padding: 8px 12px;
+}
+
+.dropdown-menu li a {
+  color: white;
+  font-size: 14px;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Hover effects for dropdown items */
+.dropdown-menu li a:hover {
+  background-color: #555;
+}
+
+/* Responsive Mobile Navbar */
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .nav-item {
+    width: 100%;
+    text-align: center;
+  }
+  .nav-item a {
+    padding: 15px;
+  }
+  .dropdown-menu {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  .dropdown-menu li a {
+    padding: 12px 20px;
+  }
+}
 
 /*# sourceMappingURL=dropdown.css.map */
