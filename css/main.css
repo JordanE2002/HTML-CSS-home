@@ -302,6 +302,11 @@ body {
   --services-colour7: #ce4125;
 }
 
+/*consent color*/
+:root {
+  --consent: #6b6d7f;
+}
+
 /*Font type */
 :root {
   --poppins: "Poppins", sans-serif;
@@ -379,13 +384,13 @@ body {
 
 /* Mobile icon */
 .menu-icon {
-  display: none; /* Hidden by default */
+  display: none;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .menu-icon {
-    display: block; /* Show menu icon */
+    display: block;
     font-size: 24px;
   }
 }

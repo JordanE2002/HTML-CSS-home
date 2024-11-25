@@ -6,11 +6,11 @@
   bottom: 0;
   left: 0;
   display: flex;
-  background: #75788a;
+  background: var(--consent);
   font-weight: 600;
   text-transform: capitalize;
-  color: #fff;
-  border: solid #75788a;
+  color: var(--default-white);
+  border: solid var(--consent);
   border-width: 1px 1px 0 0;
   border-radius: 0;
   border-top-right-radius: 10px;
@@ -22,8 +22,8 @@
 
 /* Hover effort for button */
 #manage:hover {
-  background-color: #6b6d7f;
-  border-color: #6b6d7f;
+  background-color: var(--consent);
+  border-color: var(--consent);
 }
 
 /*# sourceMappingURL=consent.css.map */
