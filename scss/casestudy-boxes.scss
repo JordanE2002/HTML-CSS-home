@@ -15,7 +15,7 @@
     justify-content: center;
     align-items: center; 
     width: 30%; 
-    background-color: #fff; 
+    background-color: var(--default-white); 
     padding: 10px;
     border-radius: 0; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
@@ -41,20 +41,22 @@
 }
 
 /* Headings */
-.flexbox-item h3 {
-    color: #db8c0d;
+
+.flexbox-item {
     font-weight: 600;
     font-size: 1rem;
     line-height: 1.5rem;
     font-family: inherit;
 }
 
+.flexbox-item:nth-child(1) h3 {
+    color: #db8c0d;
+   
+}
+
 .flexbox-item:nth-child(2) h3 {
-    color: #926fb1;
-    font-weight: 600;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-family: inherit;
+    color: var(--services-colour5);
+
 }
 
 /* Text inside the flexbox item */
@@ -62,40 +64,38 @@
    font-weight: 600;
    font-size: 0.8125rem;
    line-height: 1.375rem;
-   font-family: Poppins, sans-serif;
+   font-family: var(--poppins);
    letter-spacing: 0.4px;
 }
 
 /* Buttons */
 .button-casestudy {
-    font-family: Poppins, sans-serif;
+    font-family: var(--poppins);
     letter-spacing: 0.4px;
     box-sizing: border-box;
-    background: transparent;
     text-decoration: none;
     display: inline-block;
     margin-bottom: 0;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
-    border: 1px solid transparent;
-    user-select: none;
     height: auto;
     line-height: 35px;
     padding: 5px 15px;
     text-transform: uppercase;
     font-size: 1.063rem;
     border-radius: 3px;
-    white-space: normal;
-    color: #fff;
+    color: var(--default-white);
     background-color: #db8c0d;
     border-color: #db8c0d;
     font-weight: 400;
 }
 
+
+
 .flexbox-item:nth-child(2) .button-casestudy {
-    background-color: #926fb1;
-    border-color: #926fb1;
+    background-color: var(--services-colour5);
+    border-color: var(--services-colour5);
 }
 
 /* Grey line */
