@@ -1,7 +1,7 @@
 /* Background */
 .clients-section {
-    background-color: #092acc; 
-    color: #ccc; 
+    background-color: var(--footer-welcome); 
+    color: var(--white);
     display: flex; 
     flex-direction: row; 
     justify-content: space-between; 
