@@ -2,7 +2,7 @@
     .footer {
         position: relative;
         background-color: var(--footer-welcome); 
-        color: var(--white);
+        color: var(--default-white); 
         font-family: 'Poppins', sans-serif;
         font-size: 0.875rem;
         width: 100%;
@@ -48,7 +48,7 @@
 }
 
 .social-icons a {
-    color: #fff;
+    color: var(--default-white);
     font-size: 1.5rem;
     transition: color 0.3s ease;
 }
@@ -87,7 +87,7 @@
 
 /* Footer links */
 .footer-menu ul li a {
-    color: #fff;
+    color: var(--default-white);
     text-decoration: none; 
     transition: color 0.3s ease, text-decoration 0.3s ease; 
 }
@@ -111,27 +111,23 @@
     }
 }
 
+
 .footer-bottom {
     background-color: #212330;
     padding: 10px 0;
-    position: absolute;
-    width: 100%;
-  
+    position: relative; 
+    width: 100%; 
+    overflow: hidden; 
 }
 
 .footer-banner {
-    line-height: 1.42857143;
-    font-family: Poppins, sans-serif;
-    letter-spacing: .4px;
-    font-size: .8125rem;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    color: #fff;
     display: flex;
-    justify-content: flex-start;
-    position: relative; /* Allows shifting with `left` */
-    left: 10%; /* Shift the element 25% from the left */
+    justify-content: flex-start; 
+    padding-left: 10%; 
+    width: 100%; 
+    font-size: 0.9rem; 
+    color: var(--default-white); 
+    text-align: left; 
 }
 
 
@@ -140,7 +136,7 @@
     top: 100px;    
     left: 100px;       
     background-color: #333; 
-    color: #fff;     
+    color: var(--default-white);     
     border: 2px solid #ccc;
     padding: 12px 25px; 
     border-radius: 25px; 

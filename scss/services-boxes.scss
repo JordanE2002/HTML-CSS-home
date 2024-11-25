@@ -107,47 +107,47 @@
 
 /*Targets each textbox colors*/
 .service-flexbox-item:nth-child(1) .service-button {
-    background-color: #67809f;
-    border-color: #67809f;
+    background-color: var(--services-colour1); 
+    border-color: var(--services-colour1); 
     color: #fff;
 }
 
 .service-flexbox-item:nth-child(2) .service-button {
-    background-color: #4183d7;
-    border-color: #4183d7;
+    background-color: var(--services-colour2);
+    border-color: var(--services-colour2);
     color: #fff;
 }
 
 .service-flexbox-item:nth-child(3) .service-button {
-    background-color: #2ecc71;
-    border-color: #2ecc71;
+    background-color: var(--services-colour3);
+    border-color: var(--services-colour3);
     color: #fff;
 }
 
 .service-flexbox-item:nth-child(4) .service-button {
-    background-color: #d64541;
-    border-color: #d64541;
+    background-color: var(--services-colour4);
+    border-color: var(--services-colour4);
     color: #fff;
 }
 
 
 
 .service-flexbox-item:nth-child(5) .service-button {
-    background-color: #926fb1;
-    border-color: #926fb1;
+    background-color: var(--services-colour5);
+    border-color: var(--services-colour5);
     color: #fff;
 }
 
 .service-flexbox-item:nth-child(6) .service-button {
-    background-color: #f62459;
-    border-color: #f62459;
+    background-color: var(--services-colour6);
+    border-color: var(--services-colour6);
     color: #fff;
 }
 
 .service-flexbox-item:nth-child(7) .service-button {
     
-    background-color: #ce4125;
-    border-color: #ce4125;
+    background-color: var(--services-colour7);
+    border-color: var(--services-colour7);
     color: #fff;
 }
 
@@ -162,12 +162,12 @@
 
 .service-flexbox-item:nth-child(1):hover{
 
-    background-color: #67809f;
-    border-color: #67809f;
+    background-color: var(--services-colour1); 
+    border-color: var(--services-colour1);
 
     .service-button{
 
-        color: #67809f;
+        color:  var(--services-colour1);
         background-color: white;
     }
     
@@ -180,12 +180,12 @@ color: white;
 
 .service-flexbox-item:nth-child(2):hover{
 
-    background-color: #4183d7;
-    border-color: #4183d7;
+    background-color: var(--services-colour2);
+    border-color:  var(--services-colour2);
 
     .service-button{
 
-        color: #4183d7;
+        color:  var(--services-colour2);
         background-color: white;
     }
     
@@ -198,12 +198,12 @@ color: white;
 
 .service-flexbox-item:nth-child(3):hover{
 
-    background-color: #2ecc71;
-    border-color: #2ecc71;
+    background-color: var(--services-colour3);
+    border-color:  var(--services-colour3);
 
     .service-button{
 
-        color: #2ecc71;
+        color:  var(--services-colour3);
         background-color: white;
     }
     
@@ -216,12 +216,12 @@ color: white;
 
 .service-flexbox-item:nth-child(4):hover{
 
-    background-color: #d64541;
-    border-color: #d64541;
+    background-color: var(--services-colour4);
+    border-color: var(--services-colour4);
 
     .service-button{
 
-        color: #d64541;
+        color: var(--services-colour4);
         background-color: white;
     }
     
@@ -234,12 +234,12 @@ color: white;
 
 .service-flexbox-item:nth-child(5):hover{
 
-    background-color: #926fb1;
-    border-color: #926fb1;
+    background-color: var(--services-colour5);
+    border-color: var(--services-colour5);
 
     .service-button{
 
-        color: #926fb1;
+        color: var(--services-colour5);
         background-color: white;
     }
     
@@ -252,12 +252,12 @@ color: white;
 
 .service-flexbox-item:nth-child(6):hover{
 
-    background-color: #f62459;
-    border-color: #f62459;
+    background-color: var(--services-colour6);
+    border-color: var(--services-colour6);
 
     .service-button{
 
-        color: #f62459;
+        color: var(--services-colour6);
         background-color: white;
     }
     
@@ -270,12 +270,12 @@ color: white;
 
 .service-flexbox-item:nth-child(7):hover{
 
-    background-color: #ce4125;
-    border-color: #ce4125;
+    background-color: var(--services-colour7);
+    border-color: var(--services-colour7);
 
     .service-button{
 
-        color: #ce4125;
+        color: var(--services-colour7);
         background-color: white;
     }
     

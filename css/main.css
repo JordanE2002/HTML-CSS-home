@@ -32,7 +32,7 @@ body {
 .footer {
   position: relative;
   background-color: var(--footer-welcome);
-  color: var(--white);
+  color: var(--default-white);
   font-family: "Poppins", sans-serif;
   font-size: 0.875rem;
   width: 100%;
@@ -78,7 +78,7 @@ body {
 }
 
 .social-icons a {
-  color: #fff;
+  color: var(--default-white);
   font-size: 1.5rem;
   transition: color 0.3s ease;
 }
@@ -115,7 +115,7 @@ body {
 
 /* Footer links */
 .footer-menu ul li a {
-  color: #fff;
+  color: var(--default-white);
   text-decoration: none;
   transition: color 0.3s ease, text-decoration 0.3s ease;
 }
@@ -138,23 +138,19 @@ body {
 .footer-bottom {
   background-color: #212330;
   padding: 10px 0;
-  position: absolute;
+  position: relative;
   width: 100%;
+  overflow: hidden;
 }
 
 .footer-banner {
-  line-height: 1.42857143;
-  font-family: Poppins, sans-serif;
-  letter-spacing: 0.4px;
-  font-size: 0.8125rem;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-  color: #fff;
   display: flex;
   justify-content: flex-start;
-  position: relative; /* Allows shifting with `left` */
-  left: 10%; /* Shift the element 25% from the left */
+  padding-left: 10%;
+  width: 100%;
+  font-size: 0.9rem;
+  color: var(--default-white);
+  text-align: left;
 }
 
 #manage-consent {
@@ -162,7 +158,7 @@ body {
   top: 100px;
   left: 100px;
   background-color: #333;
-  color: #fff;
+  color: var(--default-white);
   border: 2px solid #ccc;
   padding: 12px 25px;
   border-radius: 25px;
@@ -258,9 +254,25 @@ body {
   }
 }
 /* font variables */
-/* font variables */
+/*default white */
 :root {
-  --footer-welcome: #323544; /* Renamed variable */
+  --default-white: #fff;
+}
+
+/*Footer and welcome background color */
+:root {
+  --footer-welcome: #323544;
+}
+
+/*Case study buttons and dropbox colours */
+:root {
+  --services-colour1: #67809f;
+  --services-colour2: #4183d7;
+  --services-colour3: #2ecc71;
+  --services-colour4: #d64541;
+  --services-colour5: #926fb1;
+  --services-colour6: #f62459;
+  --services-colour7: #ce4125;
   --white: #ffffff;
 }
 
@@ -801,44 +813,44 @@ body {
 
 /*Targets each textbox colors*/
 .service-flexbox-item:nth-child(1) .service-button {
-  background-color: #67809f;
-  border-color: #67809f;
+  background-color: var(--services-colour1);
+  border-color: var(--services-colour1);
   color: #fff;
 }
 
 .service-flexbox-item:nth-child(2) .service-button {
-  background-color: #4183d7;
-  border-color: #4183d7;
+  background-color: var(--services-colour2);
+  border-color: var(--services-colour2);
   color: #fff;
 }
 
 .service-flexbox-item:nth-child(3) .service-button {
-  background-color: #2ecc71;
-  border-color: #2ecc71;
+  background-color: var(--services-colour3);
+  border-color: var(--services-colour3);
   color: #fff;
 }
 
 .service-flexbox-item:nth-child(4) .service-button {
-  background-color: #d64541;
-  border-color: #d64541;
+  background-color: var(--services-colour4);
+  border-color: var(--services-colour4);
   color: #fff;
 }
 
 .service-flexbox-item:nth-child(5) .service-button {
-  background-color: #926fb1;
-  border-color: #926fb1;
+  background-color: var(--services-colour5);
+  border-color: var(--services-colour5);
   color: #fff;
 }
 
 .service-flexbox-item:nth-child(6) .service-button {
-  background-color: #f62459;
-  border-color: #f62459;
+  background-color: var(--services-colour6);
+  border-color: var(--services-colour6);
   color: #fff;
 }
 
 .service-flexbox-item:nth-child(7) .service-button {
-  background-color: #ce4125;
-  border-color: #ce4125;
+  background-color: var(--services-colour7);
+  border-color: var(--services-colour7);
   color: #fff;
 }
 
@@ -850,11 +862,11 @@ body {
 }
 
 .service-flexbox-item:nth-child(1):hover {
-  background-color: #67809f;
-  border-color: #67809f;
+  background-color: var(--services-colour1);
+  border-color: var(--services-colour1);
 }
 .service-flexbox-item:nth-child(1):hover .service-button {
-  color: #67809f;
+  color: var(--services-colour1);
   background-color: white;
 }
 .service-flexbox-item:nth-child(1):hover p, .service-flexbox-item:nth-child(1):hover h3 {
@@ -862,11 +874,11 @@ body {
 }
 
 .service-flexbox-item:nth-child(2):hover {
-  background-color: #4183d7;
-  border-color: #4183d7;
+  background-color: var(--services-colour2);
+  border-color: var(--services-colour2);
 }
 .service-flexbox-item:nth-child(2):hover .service-button {
-  color: #4183d7;
+  color: var(--services-colour2);
   background-color: white;
 }
 .service-flexbox-item:nth-child(2):hover p, .service-flexbox-item:nth-child(2):hover h3 {
@@ -874,11 +886,11 @@ body {
 }
 
 .service-flexbox-item:nth-child(3):hover {
-  background-color: #2ecc71;
-  border-color: #2ecc71;
+  background-color: var(--services-colour3);
+  border-color: var(--services-colour3);
 }
 .service-flexbox-item:nth-child(3):hover .service-button {
-  color: #2ecc71;
+  color: var(--services-colour3);
   background-color: white;
 }
 .service-flexbox-item:nth-child(3):hover p, .service-flexbox-item:nth-child(3):hover h3 {
@@ -886,11 +898,11 @@ body {
 }
 
 .service-flexbox-item:nth-child(4):hover {
-  background-color: #d64541;
-  border-color: #d64541;
+  background-color: var(--services-colour4);
+  border-color: var(--services-colour4);
 }
 .service-flexbox-item:nth-child(4):hover .service-button {
-  color: #d64541;
+  color: var(--services-colour4);
   background-color: white;
 }
 .service-flexbox-item:nth-child(4):hover p, .service-flexbox-item:nth-child(4):hover h3 {
@@ -898,11 +910,11 @@ body {
 }
 
 .service-flexbox-item:nth-child(5):hover {
-  background-color: #926fb1;
-  border-color: #926fb1;
+  background-color: var(--services-colour5);
+  border-color: var(--services-colour5);
 }
 .service-flexbox-item:nth-child(5):hover .service-button {
-  color: #926fb1;
+  color: var(--services-colour5);
   background-color: white;
 }
 .service-flexbox-item:nth-child(5):hover p, .service-flexbox-item:nth-child(5):hover h3 {
@@ -910,11 +922,11 @@ body {
 }
 
 .service-flexbox-item:nth-child(6):hover {
-  background-color: #f62459;
-  border-color: #f62459;
+  background-color: var(--services-colour6);
+  border-color: var(--services-colour6);
 }
 .service-flexbox-item:nth-child(6):hover .service-button {
-  color: #f62459;
+  color: var(--services-colour6);
   background-color: white;
 }
 .service-flexbox-item:nth-child(6):hover p, .service-flexbox-item:nth-child(6):hover h3 {
@@ -922,11 +934,11 @@ body {
 }
 
 .service-flexbox-item:nth-child(7):hover {
-  background-color: #ce4125;
-  border-color: #ce4125;
+  background-color: var(--services-colour7);
+  border-color: var(--services-colour7);
 }
 .service-flexbox-item:nth-child(7):hover .service-button {
-  color: #ce4125;
+  color: var(--services-colour7);
   background-color: white;
 }
 .service-flexbox-item:nth-child(7):hover p, .service-flexbox-item:nth-child(7):hover h3 {

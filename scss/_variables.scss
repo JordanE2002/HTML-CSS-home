@@ -83,10 +83,36 @@ body {
 
 /* font variables */
 
-/*Footer and welcome background color */
+/*default white */
+
+
 :root {
-    --footer-welcome: #323544; 
-    --white: #ffffff;
+    --default-white: #fff; 
+    
 }
 
-/*Case study buttons and dropbox colours 
+
+
+
+
+/*Footer and welcome background color */
+
+:root {
+    --footer-welcome: #323544; 
+    
+}
+
+/*Case study buttons and dropbox colours */
+
+:root {
+    --services-colour1: #67809f;
+    --services-colour2: #4183d7;
+    --services-colour3: #2ecc71;
+    --services-colour4: #d64541;
+    --services-colour5: #926fb1;
+    --services-colour6: #f62459;
+    --services-colour7: #ce4125;
+
+
+    --white: #ffffff;
+}
