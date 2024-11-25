@@ -1,4 +1,4 @@
-/* Static Image Section */
+/* slider section */
 .static-image {
   position: relative;
   width: 100%;
@@ -18,7 +18,7 @@
   left: 30px;
   transform: translateY(-50%);
   z-index: 10;
-  color: #fff;
+  color: var(--default-white);
   max-width: 400px;
 }
 

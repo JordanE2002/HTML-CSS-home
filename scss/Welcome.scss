@@ -1,7 +1,7 @@
 /* Background */
 .clients-section {
     background-color: var(--footer-welcome); 
-    color: var(--white);
+    color: var(--default-white);
     display: flex; 
     flex-direction: row; 
     justify-content: space-between; 
@@ -10,7 +10,7 @@
 }
 /* h1 styling */
 .clients-section h1 {
-    color: #fff; 
+    color: var(--default-white); 
     font-size: 2rem;
     margin-bottom: 20px;
     margin-top: 0; 

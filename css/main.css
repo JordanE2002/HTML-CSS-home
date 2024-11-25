@@ -33,7 +33,7 @@ body {
   position: relative;
   background-color: var(--footer-welcome);
   color: var(--default-white);
-  font-family: "Poppins", sans-serif;
+  font-family: var(--poppins);
   font-size: 0.875rem;
   width: 100%;
   padding: 47px 0 0;
@@ -300,7 +300,11 @@ body {
   --services-colour5: #926fb1;
   --services-colour6: #f62459;
   --services-colour7: #ce4125;
-  --white: #ffffff;
+}
+
+/*Font type */
+:root {
+  --oppins: "Poppins", sans-serif;
 }
 
 /* Main header styling */
@@ -385,7 +389,7 @@ body {
     font-size: 24px;
   }
 }
-/* Static Image Section */
+/* slider section */
 .static-image {
   position: relative;
   width: 100%;
@@ -405,7 +409,7 @@ body {
   left: 30px;
   transform: translateY(-50%);
   z-index: 10;
-  color: #fff;
+  color: var(--default-white);
   max-width: 400px;
 }
 
@@ -462,7 +466,7 @@ body {
 /* Background */
 .clients-section {
   background-color: var(--footer-welcome);
-  color: var(--white);
+  color: var(--default-white);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -472,7 +476,7 @@ body {
 
 /* h1 styling */
 .clients-section h1 {
-  color: #fff;
+  color: var(--default-white);
   font-size: 2rem;
   margin-bottom: 20px;
   margin-top: 0;
