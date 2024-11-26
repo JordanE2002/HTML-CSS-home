@@ -80,7 +80,7 @@
 .testimonial-author {
   display: block;
   margin-top: 10px;
-  font-style: italic;
+  font-style: var(poppins);
 }
 
 /* Responsive design */
