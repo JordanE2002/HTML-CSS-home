@@ -9,6 +9,12 @@
     padding: 40px 20px;
 }
 
+
+/*I did not had to specify the h1 but its been messing up recently */
+.left-content h1,
+.right-content h1 {
+    color: var(--default-white); 
+}
 /* Left side content */
 .left-content {
     flex: 1; 

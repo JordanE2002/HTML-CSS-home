@@ -9,6 +9,12 @@
   padding: 40px 20px;
 }
 
+/* Apply the color to the <h1> elements */
+.left-content h1,
+.right-content h1 {
+  color: var(--default-white); /* Make headers match the default white color */
+}
+
 /* Left side content */
 .left-content {
   flex: 1;
