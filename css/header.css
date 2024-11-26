@@ -13,11 +13,13 @@
   display: block;
 }
 
-/* Header buttons Styling */
+/* Header buttons stylings */
 .header-buttons {
   display: flex;
   gap: 10px;
-  justify-content: right;
+  /*These mesurements are not permement, i just wanted a rough esiimate on where they are */
+  margin-left: auto;
+  margin-right: -150px;
 }
 
 /* Button positions */
@@ -33,19 +35,21 @@
 
 /* Support color button */
 .support-btn {
-  background-color: #007bff;
-  color: #fff;
+  background-color: var(--services-colour2);
+  color: var(--default-white);
+  border: none;
 }
 
 /* Contact button stylings */
 .contact-btn {
-  background-color: #999aa2;
-  color: #fff;
+  background-color: grey;
+  color: var(--default-white);
+  border: none;
 }
 
 /* Searchbar styling */
 .search-bar {
-  position: relative; /* Needed to position the search icon inside */
+  position: relative;
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -54,18 +58,18 @@
 
 /* Searchbar input info */
 .search-bar input {
-  padding: 5px 30px 5px 10px; /* Add extra padding on the right to make space for the icon */
-  border: 1px solid blue;
+  padding: 5px 30px 5px 10px;
+  border: 1px solid var(--services-colour2);
   border-radius: 4px;
-  width: 200px; /* Adjust width as needed */
+  width: 200px;
 }
 
 /* Search button styling */
 .search-btn {
-  position: absolute; /* Position the search icon inside the input */
-  right: 10px; /* Align it to the right */
-  background-color: transparent; /* Make background transparent */
-  color: grey; /* Make icon color blue */
+  position: absolute;
+  right: 10px;
+  background-color: transparent;
+  color: gray;
   border: none;
   cursor: pointer;
 }
@@ -75,17 +79,20 @@
   display: none;
 }
 
-/* Responsive Design */
+/* Responsive design for smaller screens */
 @media (max-width: 768px) {
   .menu-icon {
     display: block;
     font-size: 24px;
   }
   .search-bar input {
-    width: 150px; /* Reduce width of search bar on small screens */
+    width: 150px;
   }
   .search-btn {
-    right: 5px; /* Reduce the spacing for the icon on smaller screens */
+    right: 5px;
+  }
+  .header-buttons {
+    margin-right: 10px;
   }
 }
 

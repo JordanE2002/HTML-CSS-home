@@ -13,11 +13,14 @@
     display: block;
 }
 
-/* Header buttons Styling */
+/* Header buttons stylings */
 .header-buttons {
     display: flex;
     gap: 10px;
-    justify-content: right;
+
+    /*These mesurements are not permement, i just wanted a rough esiimate on where they are */
+    margin-left: auto; 
+    margin-right: -150px; 
 }
 
 /* Button positions */
@@ -33,14 +36,16 @@
 
 /* Support color button */
 .support-btn {
-    background-color: #007bff;
-    color: #fff;
+    background-color: var(--services-colour2);
+    color: var(--default-white);
+    border: none;
 }
 
 /* Contact button stylings */
 .contact-btn {
-    background-color: #999aa2;
-    color: #fff;
+    background-color: grey;
+    color: var(--default-white);
+    border: none;
 }
 
 /* Searchbar styling */
@@ -55,7 +60,7 @@
 /* Searchbar input info */
 .search-bar input {
     padding: 5px 30px 5px 10px; 
-    border: 1px solid blue;
+    border: 1px solid var(  --services-colour2);
     border-radius: 4px;
     width: 200px; 
 }
@@ -65,7 +70,7 @@
     position: absolute;
     right: 10px;
     background-color: transparent; 
-    color: grey; 
+    color: gray; 
     border: none;
     cursor: pointer;
 }
@@ -75,7 +80,7 @@
     display: none; 
 }
 
-/* Responsive Design */
+/* Responsive design for smaller screens */
 @media (max-width: 768px) {
     .menu-icon {
         display: block;
@@ -83,10 +88,15 @@
     }
 
     .search-bar input {
-        width: 150px; /* Reduce width of search bar on small screens */
+        width: 150px; 
     }
 
     .search-btn {
-        right: 5px; /* Reduce the spacing for the icon on smaller screens */
+        right: 5px; 
+    }
+
+    
+    .header-buttons {
+        margin-right: 10px; 
     }
 }
