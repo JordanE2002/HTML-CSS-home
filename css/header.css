@@ -17,14 +17,14 @@
 .header-buttons {
   display: flex;
   gap: 10px;
+  justify-content: right;
 }
 
-/* Button positions*/
+/* Button positions */
 .btn {
   height: 56px;
   line-height: 46px;
   font-size: 1.125rem;
-  float: left;
   padding: 5px 15px;
   text-transform: uppercase;
   border-radius: 3px;
@@ -37,7 +37,7 @@
   color: #fff;
 }
 
-/* Contact button stylings*/
+/* Contact button stylings */
 .contact-btn {
   background-color: #999aa2;
   color: #fff;
@@ -45,26 +45,28 @@
 
 /* Searchbar styling */
 .search-bar {
+  position: relative; /* Needed to position the search icon inside */
   display: flex;
-  gap: 5px;
   align-items: center;
   margin-left: auto;
   margin-right: 10px;
 }
 
-/* Searchbar input info*/
+/* Searchbar input info */
 .search-bar input {
-  padding: 5px;
-  border: 1px solid #ccc;
+  padding: 5px 30px 5px 10px; /* Add extra padding on the right to make space for the icon */
+  border: 1px solid blue;
   border-radius: 4px;
+  width: 200px; /* Adjust width as needed */
 }
 
-/* Searchbar styling*/
+/* Search button styling */
 .search-btn {
-  background-color: #007bff;
-  color: #fff;
+  position: absolute; /* Position the search icon inside the input */
+  right: 10px; /* Align it to the right */
+  background-color: transparent; /* Make background transparent */
+  color: grey; /* Make icon color blue */
   border: none;
-  padding: 6px 10px;
   cursor: pointer;
 }
 
@@ -78,6 +80,12 @@
   .menu-icon {
     display: block;
     font-size: 24px;
+  }
+  .search-bar input {
+    width: 150px; /* Reduce width of search bar on small screens */
+  }
+  .search-btn {
+    right: 5px; /* Reduce the spacing for the icon on smaller screens */
   }
 }
 

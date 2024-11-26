@@ -331,14 +331,14 @@ body {
 .header-buttons {
   display: flex;
   gap: 10px;
+  justify-content: right;
 }
 
-/* Button positions*/
+/* Button positions */
 .btn {
   height: 56px;
   line-height: 46px;
   font-size: 1.125rem;
-  float: left;
   padding: 5px 15px;
   text-transform: uppercase;
   border-radius: 3px;
@@ -351,7 +351,7 @@ body {
   color: #fff;
 }
 
-/* Contact button stylings*/
+/* Contact button stylings */
 .contact-btn {
   background-color: #999aa2;
   color: #fff;
@@ -359,26 +359,28 @@ body {
 
 /* Searchbar styling */
 .search-bar {
+  position: relative; /* Needed to position the search icon inside */
   display: flex;
-  gap: 5px;
   align-items: center;
   margin-left: auto;
   margin-right: 10px;
 }
 
-/* Searchbar input info*/
+/* Searchbar input info */
 .search-bar input {
-  padding: 5px;
-  border: 1px solid #ccc;
+  padding: 5px 30px 5px 10px; /* Add extra padding on the right to make space for the icon */
+  border: 1px solid blue;
   border-radius: 4px;
+  width: 200px; /* Adjust width as needed */
 }
 
-/* Searchbar styling*/
+/* Search button styling */
 .search-btn {
-  background-color: #007bff;
-  color: #fff;
+  position: absolute; /* Position the search icon inside the input */
+  right: 10px; /* Align it to the right */
+  background-color: transparent; /* Make background transparent */
+  color: grey; /* Make icon color blue */
   border: none;
-  padding: 6px 10px;
   cursor: pointer;
 }
 
@@ -392,6 +394,12 @@ body {
   .menu-icon {
     display: block;
     font-size: 24px;
+  }
+  .search-bar input {
+    width: 150px; /* Reduce width of search bar on small screens */
+  }
+  .search-btn {
+    right: 5px; /* Reduce the spacing for the icon on smaller screens */
   }
 }
 /* slider section */
@@ -998,7 +1006,7 @@ body {
 }
 /* Navbar stylings */
 .navbar {
-  background-color: #1a1a1a; /* Dark theme */
+  background-color: #1a1a1a;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -1016,10 +1024,10 @@ body {
 .nav-menu {
   list-style: none;
   display: flex;
-  justify-content: space-between; /* Spread items evenly */
+  justify-content: space-between;
   padding: 0;
   margin: 0;
-  width: 100%; /* Full width */
+  width: 100%;
 }
 
 .nav-item {
@@ -1030,8 +1038,8 @@ body {
 
 .nav-item a {
   text-decoration: none;
-  color: #fff; /* Bright white text */
-  font-size: 16px; /* Larger text for visibility */
+  color: #fff;
+  font-size: 16px;
   text-transform: uppercase;
   padding: 10px 15px;
   display: block;
@@ -1045,27 +1053,27 @@ body {
   display: block;
 }
 
-/* Arrow under nav item */
+/* Arrow  */
 .nav-item:hover::after {
   content: "";
   position: absolute;
   bottom: -10px;
   left: 0;
   right: 0;
-  width: 100%; /* Full width of the item */
+  width: 100%;
   height: 10px;
-  background-color: #007bff; /* Matches dropdown's blue */
+  background-color: #007bff;
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   z-index: 1;
 }
 
-/* Dropdown Menu Styling */
+/* Dropdown menu styling */
 .dropdown-menu {
   position: absolute;
-  top: 100%; /* Directly below navbar */
+  top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #007bff; /* Primary blue background */
+  background-color: #007bff;
   padding: 20px 40px;
   border-radius: 0 0 10px 10px;
   display: none; /* Hidden by default */
@@ -1103,10 +1111,9 @@ body {
 }
 
 .dropdown-menu a:hover {
-  color: #ffe700;
+  text-decoration: underline;
 }
 
-/* */
 .dropdown-menu::before {
   content: "";
   position: absolute;
