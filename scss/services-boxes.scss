@@ -8,7 +8,7 @@
 }
 
 /* Left heading info*/
-.left-heading {
+h1 {
     font-size: 2rem;
     font-weight: 600; 
     color: #333645; 
@@ -16,32 +16,15 @@
 }
 
 /* Right heading info*/
-.right-heading {
+h2 {
     font-size: 2rem; 
     font-weight: 600; 
-    color: #333645; 
+    color: blue; 
     text-align: right; 
 }
 
-/* left heading Styles */
-.service-heading {
-    font-size: 2rem; 
-    font-weight: 600;
-    text-align: center; 
-    color: #333645; 
-    margin-bottom: 10px; 
-    width: 100%; 
-}
 
-/* Right heading styles */
-.service-subheading {
-    font-size: 1.25rem;
-    font-weight: 400; 
-    text-align: center; 
-    color: #666;
-    margin-bottom: 30px; 
-    width: 100%; 
-}
+
 
 
 
