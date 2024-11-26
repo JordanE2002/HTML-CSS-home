@@ -1,4 +1,4 @@
-/*Headings container */
+/*Headings container to keep headings in line */
 .headings-container {
   display: flex;
   justify-content: space-between;
