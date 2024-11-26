@@ -352,6 +352,7 @@ body {
   background-color: var(--services-colour2);
   color: var(--default-white);
   border: none;
+  cursor: pointer;
 }
 
 /* Contact button stylings */
@@ -359,6 +360,7 @@ body {
   background-color: grey;
   color: var(--default-white);
   border: none;
+  cursor: pointer;
 }
 
 /* Searchbar styling */
