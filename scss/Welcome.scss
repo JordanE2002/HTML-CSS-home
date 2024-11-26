@@ -46,25 +46,25 @@
     white-space: normal;
 }
 
-/* Support color button */
-.support-btn {
+/* Reviews color button */
+.reviews-btn {
     color: var(--default-white);
     border: none;
     cursor: pointer;
 }
 
-/* Support color button */
-.support-btn:nth-child(1) {
+/* Reviews color button */
+.reviews-btn:nth-child(1) {
    background-color: #4387f6;
 }
 
-.support-btn:nth-child(2) {
+.reviews-btn:nth-child(2) {
    background-color: #00b67b;
 }
 
 
 /* Contact button stylings */
-.contact-btn {
+.info-btn {
     background-color: #272936;
     color: var(--default-white);
     border: none;
