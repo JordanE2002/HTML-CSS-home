@@ -70,11 +70,11 @@
   background-color: #007bff;
   padding: 20px 40px;
   border-radius: 0 0 10px 10px;
-  display: none; /* Hidden by default */
+  display: none;
   z-index: 10;
   color: #fff;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  min-width: 700px; /* Wide dropdown */
+  min-width: 700px;
 }
 
 /* Display dropdown on hover */

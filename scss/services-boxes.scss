@@ -1,11 +1,13 @@
 /* Flexbox container for the services boxes */
 .service-flexbox-container {
+    position: relative; /* Enables absolute positioning for child elements */
     display: flex;
     justify-content: center; 
     flex-wrap: wrap;  
     gap: 20px; 
-    padding: 20px;
+    padding: 40px 20px; /* Adds spacing for the title */
 }
+
 
 /* Flexbox styling for all boxes */
 .service-flexbox-item {
@@ -21,6 +23,8 @@
     position: relative; 
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
+
+
 
 
 .service-flexbox-item:nth-child(-n+3) {
