@@ -485,7 +485,7 @@ body {
     padding: 10px 20px;
   }
 }
-/* Background */
+/* Clients section */
 .clients-section {
   background-color: var(--footer-welcome);
   color: var(--default-white);
@@ -496,27 +496,91 @@ body {
   padding: 40px 20px;
 }
 
-/* h1 styling */
-.clients-section h1 {
-  color: var(--default-white);
-  font-size: 2rem;
-  margin-bottom: 20px;
-  margin-top: 0;
-}
-
-/* Having two sides for both parts */
-.clients-section .left-content,
-.clients-section .right-content {
+/* Left side content */
+.left-content {
   flex: 1;
   padding: 20px;
 }
 
-/*Styling the left and right side */
-.clients-section .right-content h1 {
-  text-align: left;
-  margin-top: 0;
+/* Right side content */
+.right-content {
+  flex: 1;
+  padding: 20px;
 }
 
+/* Left side buttons styling */
+.left-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Right side buttons styling */
+.right-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Button positions */
+.btn {
+  height: 56px;
+  line-height: 46px;
+  font-size: 1.125rem;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  white-space: normal;
+}
+
+/* Support color button */
+.support-btn {
+  color: var(--default-white);
+  border: none;
+  cursor: pointer;
+}
+
+/* Support color button */
+.support-btn:nth-child(1) {
+  background-color: #4387f6;
+}
+
+.support-btn:nth-child(2) {
+  background-color: #00b67b;
+}
+
+/* Contact button stylings */
+.contact-btn {
+  background-color: #272936;
+  color: var(--default-white);
+  border: none;
+  cursor: pointer;
+}
+
+/* Stars styling */
+.stars {
+  color: #ffcc00;
+  font-size: 1.5rem;
+}
+
+/* Testimonials author styling */
+.testimonial-author {
+  display: block;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .clients-section {
+    flex-direction: column;
+  }
+  .left-buttons,
+  .right-buttons {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
 /* Styling for button */
 #manage {
   position: fixed;
