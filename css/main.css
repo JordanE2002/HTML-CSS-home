@@ -775,47 +775,6 @@ h3:hover {
   transform: scale(1.05);
 }
 
-/* Hover Banner Styling for Case Studies */
-.partners-section .case-study {
-  position: relative;
-  display: inline-block;
-}
-
-/* Initially Hidden Banner */
-.partners-section .case-study .hover-banner {
-  position: absolute;
-  bottom: 150px;
-  left: 50%;
-  transform: translate(-50%, 0);
-  opacity: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  text-align: center;
-  padding: 20px 40px;
-  font-size: 18px;
-  white-space: nowrap;
-  border-radius: 4px;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-/* Arrow Below the Banner */
-.partners-section .case-study .hover-banner::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 8px solid rgba(0, 0, 0, 0.7);
-}
-
-/* Show Banner on Hover */
-.partners-section .case-study:hover .hover-banner {
-  opacity: 1;
-  transform: translate(-50%, -10px);
-}
-
 /* Clients section */
 .clients-section {
   background-color: var(--footer-welcome);
@@ -1215,27 +1174,6 @@ h3:hover {
   font-size: 0.9rem;
   color: var(--default-white);
   text-align: left;
-}
-
-/*Consent button*/
-#manage-consent {
-  position: fixed;
-  top: 100px;
-  left: 100px;
-  background-color: #333;
-  color: var(--default-white);
-  border: 2px solid #ccc;
-  padding: 12px 25px;
-  border-radius: 25px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  z-index: 1000;
-}
-
-/* Hover effect */
-.cookie-settings-btn:hover {
-  background: #6b6d7f;
 }
 
 /*Was not sure where to put contsent info, so i left it here */
