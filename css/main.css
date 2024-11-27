@@ -496,7 +496,7 @@ body {
   padding: 40px 20px;
 }
 
-/*I did not had to specify the h1 but its been messing up recently */
+/*I did not had to specify the h1 but its been messing up recently/ used for decoring the other headings for now */
 .left-content h1,
 .right-content h1 {
   color: var(--default-white);
@@ -840,8 +840,9 @@ body {
 
 /* Left heading info*/
 h1 {
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 2.25rem;
+  font-family: var(--poppins);
+  font-weight: 400;
   color: #333645;
   text-align: left;
 }
