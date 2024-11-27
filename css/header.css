@@ -4,10 +4,10 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  background-color: #f8f9fa;
+  background-color: var(--default-white);
 }
 
-/* Logo Styling */
+/* Logo styling */
 .logo img {
   max-width: 100%;
   display: block;

@@ -35,7 +35,7 @@
   line-height: 1.5;
 }
 
-.static-image .cta-button {
+.static-image .slider-button {
   display: inline-block;
   background-color: #926fb1;
   color: #fff;
@@ -48,7 +48,7 @@
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.static-image .cta-button:hover {
+.static-image .slider-button:hover {
   background-color: #6c4fa4;
   transform: translateY(-3px);
 }
@@ -67,7 +67,7 @@
   .static-image .overlay-content p {
     font-size: 0.875rem;
   }
-  .static-image .cta-button {
+  .static-image .slider-button {
     font-size: 1rem;
     padding: 10px 20px;
   }
