@@ -839,7 +839,7 @@ body {
 }
 
 /* Left heading info*/
-h1 {
+h2 {
   font-size: 2.25rem;
   font-family: var(--poppins);
   font-weight: 400;
@@ -848,11 +848,17 @@ h1 {
 }
 
 /* Right heading info*/
-h2 {
-  font-size: 2rem;
+h3 {
+  font-size: 1.625rem;
+  font-family: var(--poppins);
   font-weight: 600;
-  color: blue;
+  color: #333645;
   text-align: right;
+}
+
+h3:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /* service boxes */
