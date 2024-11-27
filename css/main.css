@@ -1198,6 +1198,7 @@ h3:hover {
     text-align: center;
   }
 }
+/*The footer bottom banner bit*/
 .footer-bottom {
   background-color: #212330;
   padding: 10px 0;
@@ -1216,6 +1217,7 @@ h3:hover {
   text-align: left;
 }
 
+/*Consent button*/
 #manage-consent {
   position: fixed;
   top: 100px;
