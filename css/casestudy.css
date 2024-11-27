@@ -1,24 +1,12 @@
-/* Arrow banner */
-.arrow-banner-section {
-  position: relative;
-  background-color: #1436e1;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
 /* Text in banner */
 .banner-text {
   position: relative;
   text-align: center;
   color: white;
   font-family: "Poppins", sans-serif;
-  font-size: 32px; /* Adjust as necessary */
-  font-weight: 700; /* Bold title */
-  margin-bottom: 20px; /* Space below the banner text */
-}
-
-.banner-text h1 {
-  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 /* Adding positions to it*/
@@ -53,6 +41,14 @@
   object-fit: contain;
   flex: 1 1 16%;
   margin: 0 10px;
+}
+
+/* Arrow banner */
+.arrow-banner-section {
+  position: relative;
+  background-color: #1436e1;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 /* Responsive Design */
