@@ -11,10 +11,10 @@
     position: relative;
     text-align: center;
     color: white;
-    font-family: var(--poppins);
-    font-size: 32px; 
-    font-weight: 700; 
-    margin-bottom: 20px; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px; /* Adjust as necessary */
+    font-weight: 700; /* Bold title */
+    margin-bottom: 20px; /* Space below the banner text */
 }
 
 .banner-text h1 {
@@ -23,7 +23,7 @@
 
 /* Adding positions to it*/
 .banner-text::after {
-   
+    content: '';
     position: absolute;
     bottom: -20px; 
     left: 50%;

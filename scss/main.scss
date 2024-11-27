@@ -1,12 +1,22 @@
-// main.scss
+/*Two sections, which can apply to a few differnt sections*/
 @use 'layout';
-@use 'footer';
 @use 'variables';
+
+
+
+//Sections going from top to down on the webpage
+
 @use 'header';
-@use 'body';
-@use 'Welcome';
-@use 'consent';
-@use 'partners';
-@use "casestudy-boxes";
-@use 'services-boxes';
 @use 'dropdown';
+@use 'body';
+@use 'services-boxes';
+@use 'partners';
+@use 'Welcome-section';
+@use "news-section";
+@use 'footer';
+
+
+@use 'consent';
+
+
+

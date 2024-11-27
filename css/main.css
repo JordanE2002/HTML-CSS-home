@@ -1,3 +1,4 @@
+/*Two sections, which can apply to a few differnt sections*/
 body {
   margin: 0;
 }
@@ -26,179 +27,6 @@ body {
   .container {
     width: 1200px;
   }
-}
-
-/* Footer styled */
-.footer {
-  position: relative;
-  background-color: var(--footer-welcome);
-  color: var(--default-white);
-  font-family: var(--poppins);
-  font-size: 0.875rem;
-  width: 100%;
-  padding: 47px 0 0;
-}
-
-/* Footer container */
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-/* Footer logo */
-.footer-logo {
-  text-align: left;
-  margin-bottom: 20px;
-}
-
-.footer-logo img {
-  max-width: 180px;
-  width: 100%;
-  vertical-align: middle;
-}
-
-/* App logos */
-.social-media {
-  margin-top: 15px;
-}
-
-.social-media h4 {
-  font-size: 1rem;
-  margin-bottom: 10px;
-  text-align: left;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: flex-start;
-  gap: 15px;
-  margin-top: 0;
-}
-
-.social-icons a {
-  background-color: #212330;
-  color: var(--default-white);
-  font-size: 1.5rem;
-  padding: 10px;
-  border-radius: 5px;
-  transition: color 0.3s ease;
-}
-
-/*Hover colpr for social media, stuggleing to find specific colours */
-.social-icons a:nth-child(1):hover {
-  background-color: blue;
-}
-
-.social-icons a:nth-child(2):hover {
-  background-color: green;
-}
-
-.social-icons a:nth-child(3):hover {
-  background-color: black;
-}
-
-.social-icons a:nth-child(4):hover {
-  background-color: pink;
-}
-
-/* Footer menu bit  */
-.footer-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  flex: 1;
-  justify-content: space-between;
-}
-
-.footer-menu {
-  flex: 1;
-  min-width: 200px;
-}
-
-.footer-menu h4 {
-  text-transform: uppercase;
-  font-size: 1rem;
-  margin-bottom: 15px;
-  font-weight: normal;
-}
-
-.footer-menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-menu ul li {
-  margin-bottom: 8px;
-}
-
-/* Footer links */
-.footer-menu ul li a {
-  color: var(--default-white);
-  text-decoration: none;
-  transition: color 0.3s ease, text-decoration 0.3s ease;
-}
-
-.footer-menu ul li a:hover {
-  text-decoration: underline;
-}
-
-/* Responsiveness footer*/
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .footer-row {
-    flex-direction: column;
-    align-items: center;
-  }
-  .footer-logo, .social-media {
-    text-align: center;
-  }
-}
-.footer-bottom {
-  background-color: #212330;
-  padding: 10px 0;
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
-.footer-banner {
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 10%;
-  width: 100%;
-  font-size: 0.9rem;
-  color: var(--default-white);
-  text-align: left;
-}
-
-#manage-consent {
-  position: fixed;
-  top: 100px;
-  left: 100px;
-  background-color: #333;
-  color: var(--default-white);
-  border: 2px solid #ccc;
-  padding: 12px 25px;
-  border-radius: 25px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  z-index: 1000;
-}
-
-/* Hover effect */
-.cookie-settings-btn:hover {
-  background: #6b6d7f;
 }
 
 * {
@@ -443,6 +271,129 @@ h3:hover {
     margin-right: 10px;
   }
 }
+/* Navbar stylings */
+.navbar {
+  background-color: #1a1a1a;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.nav-item {
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  display: block;
+  white-space: nowrap;
+}
+
+.nav-icon {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  display: block;
+}
+
+/* Arrow  */
+.nav-item:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #007bff;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  z-index: 1;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #007bff;
+  padding: 20px 40px;
+  border-radius: 0 0 10px 10px;
+  display: none;
+  z-index: 10;
+  color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  min-width: 700px;
+}
+
+/* Display dropdown on hover */
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+/* Dropdown Content Layout */
+.dropdown-menu ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu li {
+  margin-bottom: 10px;
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 0;
+  transition: color 0.3s;
+}
+
+.dropdown-menu a:hover {
+  text-decoration: underline;
+}
+
+.dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 20px;
+  background-color: #007bff;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  z-index: -1;
+}
+
 /* slider section */
 .static-image {
   position: relative;
@@ -515,351 +466,6 @@ h3:hover {
   .static-image .slider-button {
     font-size: 1rem;
     padding: 10px 20px;
-  }
-}
-/* Clients section */
-.clients-section {
-  background-color: var(--footer-welcome);
-  color: var(--default-white);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 40px 20px;
-}
-
-/*I did not had to specify the h1 but its been messing up recently/ used for decoring the other headings for now */
-.left-content h1,
-.right-content h1 {
-  color: var(--default-white);
-}
-
-/* Left side content */
-.left-content {
-  flex: 1;
-  padding: 20px;
-}
-
-/* Right side content */
-.right-content {
-  flex: 1;
-  padding: 20px;
-}
-
-/* Left side buttons styling */
-.left-buttons {
-  display: flex;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-/* Right side buttons styling */
-.right-buttons {
-  display: flex;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-/* Button positions */
-.btn {
-  height: 56px;
-  line-height: 46px;
-  font-size: 1.125rem;
-  padding: 5px 15px;
-  text-transform: uppercase;
-  border-radius: 3px;
-  white-space: normal;
-}
-
-/* Reviews color button */
-.reviews-btn {
-  color: var(--default-white);
-  border: none;
-  cursor: pointer;
-}
-
-/* Reviews color button */
-.reviews-btn:nth-child(1) {
-  background-color: #4387f6;
-}
-
-.reviews-btn:nth-child(2) {
-  background-color: #00b67b;
-}
-
-/* Contact button stylings */
-.info-btn {
-  background-color: #272936;
-  color: var(--default-white);
-  border: none;
-  cursor: pointer;
-}
-
-/* Stars styling */
-.stars {
-  color: #ffcc00;
-  font-size: 1.5rem;
-}
-
-/* Testimonials author styling */
-.testimonial-author {
-  display: block;
-  margin-top: 10px;
-  font-style: var(poppins);
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-  .clients-section {
-    flex-direction: column;
-  }
-  .left-buttons,
-  .right-buttons {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-}
-/*Was not sure where to put contsent info, so i left it here */
-/* Styling for button */
-#manage {
-  position: fixed;
-  line-height: 22px;
-  z-index: 99;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  background: var(--consent);
-  font-weight: 600;
-  text-transform: capitalize;
-  color: var(--default-white);
-  border: solid var(--consent);
-  border-width: 1px 1px 0 0;
-  border-radius: 0;
-  border-top-right-radius: 10px;
-  padding: 0 10px;
-  cursor: pointer;
-  font-size: 0.8rem;
-  font-family: inherit;
-}
-
-/* Hover effort for button */
-#manage:hover {
-  background-color: var(--consent);
-  border-color: var(--consent);
-}
-
-/* Container part for the images */
-.partners-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
-  padding: 50px 0;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-/* The image styles */
-.partners-section img {
-  height: auto;
-  max-height: 100px;
-  object-fit: contain;
-  flex: 1 1 16%;
-  margin: 0 10px;
-  filter: grayscale(100%);
-  transition: filter 0.3s ease, transform 0.3s ease;
-}
-
-/* Hovered images */
-.partners-section img:hover {
-  filter: grayscale(0%);
-  transform: scale(1.05);
-}
-
-/* Hover Banner Styling for Case Studies */
-.partners-section .case-study {
-  position: relative;
-  display: inline-block;
-}
-
-/* Initially Hidden Banner */
-.partners-section .case-study .hover-banner {
-  position: absolute;
-  bottom: 150px;
-  left: 50%;
-  transform: translate(-50%, 0);
-  opacity: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  text-align: center;
-  padding: 20px 40px;
-  font-size: 18px;
-  white-space: nowrap;
-  border-radius: 4px;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-/* Arrow Below the Banner */
-.partners-section .case-study .hover-banner::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 8px solid rgba(0, 0, 0, 0.7);
-}
-
-/* Show Banner on Hover */
-.partners-section .case-study:hover .hover-banner {
-  opacity: 1;
-  transform: translate(-50%, -10px);
-}
-
-/* Flexbox container for the case studies */
-.flexbox-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  align-items: stretch;
-  flex-wrap: wrap;
-  padding: 20px;
-}
-
-/* Flexbox picture styling */
-.flexbox-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 30%;
-  background-color: var(--default-white);
-  padding: 10px;
-  border-radius: 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Hover effect for flexbox items */
-.flexbox-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-}
-
-/* Image styling */
-.flexbox-item img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 0;
-  margin-bottom: 10px;
-}
-
-/* Headings */
-.flexbox-item {
-  font-weight: 600;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-family: inherit;
-}
-
-.flexbox-item:nth-child(1) h3 {
-  color: #db8c0d;
-}
-
-.flexbox-item:nth-child(2) h3 {
-  color: var(--services-colour5);
-}
-
-/* Text inside the flexbox item */
-.flexbox-item p {
-  font-weight: 600;
-  font-size: 0.8125rem;
-  line-height: 1.375rem;
-  font-family: var(--poppins);
-  letter-spacing: 0.4px;
-}
-
-/* Buttons */
-.button-casestudy {
-  font-family: var(--poppins);
-  letter-spacing: 0.4px;
-  box-sizing: border-box;
-  text-decoration: none;
-  display: inline-block;
-  margin-bottom: 0;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  height: auto;
-  line-height: 35px;
-  padding: 5px 15px;
-  text-transform: uppercase;
-  font-size: 1.063rem;
-  border-radius: 3px;
-  color: var(--default-white);
-  background-color: #db8c0d;
-  border-color: #db8c0d;
-  font-weight: 400;
-}
-
-.flexbox-item:nth-child(2) .button-casestudy {
-  background-color: var(--services-colour5);
-  border-color: var(--services-colour5);
-}
-
-/* Grey line */
-.horizontial-line {
-  width: 80%;
-  height: 1px;
-  background-color: #ddd;
-  margin: 15px auto;
-  border: none;
-}
-
-/* Container for the logo and the posted info */
-.flexbox-logo-container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-top: 15px;
-  margin-left: 20%;
-  width: 100%;
-}
-
-/* Logo adjustments */
-.flexbox-logo {
-  margin-right: 10px;
-}
-
-/* Logo image styling */
-.flexbox-logo img {
-  width: 40px;
-  height: auto;
-  border-radius: 100%;
-  object-fit: contain;
-}
-
-/* Author text */
-.posted-info p {
-  font-size: 0.9rem;
-  margin: 0;
-  font-family: Poppins, sans-serif;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .flexbox-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .flexbox-item {
-    width: 80%;
-    margin-bottom: 20px;
   }
 }
 /* service boxes */
@@ -1116,127 +722,522 @@ h3:hover {
     max-width: 100px;
   }
 }
-/* Navbar stylings */
-.navbar {
-  background-color: #1a1a1a;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  overflow: visible;
-}
-
-.nav-container {
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav-menu {
-  list-style: none;
+/* Container part for the images */
+.partners-section {
   display: flex;
   justify-content: space-between;
-  padding: 0;
-  margin: 0;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 50px 0;
   width: 100%;
+  box-sizing: border-box;
 }
 
-.nav-item {
+/* The image styles */
+.partners-section img {
+  height: auto;
+  max-height: 100px;
+  object-fit: contain;
+  flex: 1 1 16%;
+  margin: 0 10px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+/* Hovered images */
+.partners-section img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/* Hover Banner Styling for Case Studies */
+.partners-section .case-study {
   position: relative;
-  text-align: center;
-  cursor: pointer;
+  display: inline-block;
 }
 
-.nav-item a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 16px;
-  text-transform: uppercase;
-  padding: 10px 15px;
-  display: block;
-  white-space: nowrap;
-}
-
-.nav-icon {
-  width: 50px;
-  height: 50px;
-  margin: auto;
-  display: block;
-}
-
-/* Arrow  */
-.nav-item:hover::after {
-  content: "";
+/* Initially Hidden Banner */
+.partners-section .case-study .hover-banner {
   position: absolute;
-  bottom: -10px;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 10px;
-  background-color: #007bff;
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  z-index: 1;
+  bottom: 150px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  padding: 20px 40px;
+  font-size: 18px;
+  white-space: nowrap;
+  border-radius: 4px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Dropdown menu styling */
-.dropdown-menu {
+/* Arrow Below the Banner */
+.partners-section .case-study .hover-banner::after {
+  content: "";
   position: absolute;
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #007bff;
-  padding: 20px 40px;
-  border-radius: 0 0 10px 10px;
-  display: none;
-  z-index: 10;
-  color: #fff;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  min-width: 700px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid rgba(0, 0, 0, 0.7);
 }
 
-/* Display dropdown on hover */
-.nav-item:hover .dropdown-menu {
+/* Show Banner on Hover */
+.partners-section .case-study:hover .hover-banner {
+  opacity: 1;
+  transform: translate(-50%, -10px);
+}
+
+/* Clients section */
+.clients-section {
+  background-color: var(--footer-welcome);
+  color: var(--default-white);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 20px;
+}
+
+/*I did not had to specify the h1 but its been messing up recently/ used for decoring the other headings for now */
+.left-content h1,
+.right-content h1 {
+  color: var(--default-white);
+}
+
+/* Left side content */
+.left-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Right side content */
+.right-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Left side buttons styling */
+.left-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Right side buttons styling */
+.right-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Button positions */
+.btn {
+  height: 56px;
+  line-height: 46px;
+  font-size: 1.125rem;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  white-space: normal;
+}
+
+/* Reviews color button */
+.reviews-btn {
+  color: var(--default-white);
+  border: none;
+  cursor: pointer;
+}
+
+/* Reviews color button */
+.reviews-btn:nth-child(1) {
+  background-color: #4387f6;
+}
+
+.reviews-btn:nth-child(2) {
+  background-color: #00b67b;
+}
+
+/* Contact button stylings */
+.info-btn {
+  background-color: #272936;
+  color: var(--default-white);
+  border: none;
+  cursor: pointer;
+}
+
+/* Stars styling */
+.stars {
+  color: #ffcc00;
+  font-size: 1.5rem;
+}
+
+/* Testimonials author styling */
+.testimonial-author {
   display: block;
+  margin-top: 10px;
+  font-style: var(poppins);
 }
 
-/* Dropdown Content Layout */
-.dropdown-menu ul {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+/* Responsive design */
+@media (max-width: 768px) {
+  .clients-section {
+    flex-direction: column;
+  }
+  .left-buttons,
+  .right-buttons {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+/* Flexbox container for the case studies */
+.flexbox-container {
+  display: flex;
+  justify-content: center;
   gap: 20px;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Flexbox picture styling */
+.flexbox-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  background-color: var(--default-white);
+  padding: 10px;
+  border-radius: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for flexbox items */
+.flexbox-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+/* Image styling */
+.flexbox-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0;
+  margin-bottom: 10px;
+}
+
+/* Headings */
+.flexbox-item {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: inherit;
+}
+
+.flexbox-item:nth-child(1) h3 {
+  color: #db8c0d;
+}
+
+.flexbox-item:nth-child(2) h3 {
+  color: var(--services-colour5);
+}
+
+/* Text inside the flexbox item */
+.flexbox-item p {
+  font-weight: 600;
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  font-family: var(--poppins);
+  letter-spacing: 0.4px;
+}
+
+/* Buttons */
+.button-casestudy {
+  font-family: var(--poppins);
+  letter-spacing: 0.4px;
+  box-sizing: border-box;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  color: var(--default-white);
+  background-color: #db8c0d;
+  border-color: #db8c0d;
+  font-weight: 400;
+}
+
+.flexbox-item:nth-child(2) .button-casestudy {
+  background-color: var(--services-colour5);
+  border-color: var(--services-colour5);
+}
+
+/* Grey line */
+.horizontial-line {
+  width: 80%;
+  height: 1px;
+  background-color: #ddd;
+  margin: 15px auto;
+  border: none;
+}
+
+/* Container for the logo and the posted info */
+.flexbox-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 15px;
+  margin-left: 20%;
+  width: 100%;
+}
+
+/* Logo adjustments */
+.flexbox-logo {
+  margin-right: 10px;
+}
+
+/* Logo image styling */
+.flexbox-logo img {
+  width: 40px;
+  height: auto;
+  border-radius: 100%;
+  object-fit: contain;
+}
+
+/* Author text */
+.posted-info p {
+  font-size: 0.9rem;
+  margin: 0;
+  font-family: Poppins, sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .flexbox-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .flexbox-item {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+/* Footer styled */
+.footer {
+  position: relative;
+  background-color: var(--footer-welcome);
+  color: var(--default-white);
+  font-family: var(--poppins);
+  font-size: 0.875rem;
+  width: 100%;
+  padding: 47px 0 0;
+}
+
+/* Footer container */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Footer logo */
+.footer-logo {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.footer-logo img {
+  max-width: 180px;
+  width: 100%;
+  vertical-align: middle;
+}
+
+/* App logos */
+.social-media {
+  margin-top: 15px;
+}
+
+.social-media h4 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-top: 0;
+}
+
+.social-icons a {
+  background-color: #212330;
+  color: var(--default-white);
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 5px;
+  transition: color 0.3s ease;
+}
+
+/*Hover colpr for social media, stuggleing to find specific colours */
+.social-icons a:nth-child(1):hover {
+  background-color: blue;
+}
+
+.social-icons a:nth-child(2):hover {
+  background-color: green;
+}
+
+.social-icons a:nth-child(3):hover {
+  background-color: black;
+}
+
+.social-icons a:nth-child(4):hover {
+  background-color: pink;
+}
+
+/* Footer menu bit  */
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.footer-menu {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-menu h4 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+.footer-menu ul {
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.dropdown-menu li {
-  margin-bottom: 10px;
+.footer-menu ul li {
+  margin-bottom: 8px;
 }
 
-.dropdown-menu a {
+/* Footer links */
+.footer-menu ul li a {
+  color: var(--default-white);
   text-decoration: none;
-  color: #fff;
-  font-size: 14px;
-  padding: 5px 0;
-  transition: color 0.3s;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
-.dropdown-menu a:hover {
+.footer-menu ul li a:hover {
   text-decoration: underline;
 }
 
-.dropdown-menu::before {
-  content: "";
-  position: absolute;
-  top: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 40px;
-  height: 20px;
-  background-color: #007bff;
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  z-index: -1;
+/* Responsiveness footer*/
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-logo, .social-media {
+    text-align: center;
+  }
+}
+.footer-bottom {
+  background-color: #212330;
+  padding: 10px 0;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.footer-banner {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10%;
+  width: 100%;
+  font-size: 0.9rem;
+  color: var(--default-white);
+  text-align: left;
+}
+
+#manage-consent {
+  position: fixed;
+  top: 100px;
+  left: 100px;
+  background-color: #333;
+  color: var(--default-white);
+  border: 2px solid #ccc;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Hover effect */
+.cookie-settings-btn:hover {
+  background: #6b6d7f;
+}
+
+/*Was not sure where to put contsent info, so i left it here */
+/* Styling for button */
+#manage {
+  position: fixed;
+  line-height: 22px;
+  z-index: 99;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  background: var(--consent);
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--default-white);
+  border: solid var(--consent);
+  border-width: 1px 1px 0 0;
+  border-radius: 0;
+  border-top-right-radius: 10px;
+  padding: 0 10px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-family: inherit;
+}
+
+/* Hover effort for button */
+#manage:hover {
+  background-color: var(--consent);
+  border-color: var(--consent);
 }
 
 /*# sourceMappingURL=main.css.map */
