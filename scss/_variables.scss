@@ -92,7 +92,40 @@ body {
 }
 
 
+/*Headings container to keep the case studies and services  */
+.headings-container {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;  
+    margin-bottom: 30px; 
+    padding: 0 20px; 
+}
 
+/* Left heading info*/
+h2 {
+    font-size: 2.25rem;
+    font-family: var(--poppins);
+    font-weight: 400; 
+    color: #333645; 
+    text-align: left; 
+
+
+}
+
+/* Right heading info*/
+h3 {
+    font-size: 1.625rem; 
+    font-family: var(--poppins);
+    font-weight: 600; 
+    color: #333645;
+    text-align: right; 
+   
+}
+
+h3:hover {
+text-decoration: underline;
+cursor: pointer;
+}
 
 
 /*Footer and welcome background color */
