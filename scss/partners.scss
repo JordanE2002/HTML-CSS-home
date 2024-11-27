@@ -1,5 +1,5 @@
 /* Container part for the images */
-.partners-section {
+.pictures-section {
     display: flex;
     justify-content: space-between;
     align-items: center; 
@@ -10,7 +10,7 @@
 }
 
 /* The image styles */
-.partners-section img {
+.pictures-section img {
     height: auto; 
     max-height: 100px; 
     object-fit: contain;
@@ -21,19 +21,24 @@
 }
 
 /* Hovered images */
-.partners-section img:hover {
+.pictures-section img:hover {
     filter: grayscale(0%);
     transform: scale(1.05); 
 }
 
+
+
+
+/*ONLY FOR CASE STUDIES/*
+
 /* Hover Banner Styling for Case Studies */
-.partners-section .case-study {
+.pictures-section .case-study {
     position: relative;
     display: inline-block;
 }
 
 /* Initially Hidden Banner */
-.partners-section .case-study .hover-banner {
+.pictures-section .case-study .hover-banner {
     position: absolute;
     bottom: 150px;
     left: 50%;
@@ -50,7 +55,7 @@
 }
 
 /* Arrow Below the Banner */
-.partners-section .case-study .hover-banner::after {
+.pictures-section .case-study .hover-banner::after {
     content: "";
     position: absolute;
     top: 100%; 
@@ -62,7 +67,7 @@
 }
 
 /* Show Banner on Hover */
-.partners-section .case-study:hover .hover-banner {
+.pictures-section .case-study:hover .hover-banner {
     opacity: 1; 
     transform: translate(-50%, -10px);
 }
