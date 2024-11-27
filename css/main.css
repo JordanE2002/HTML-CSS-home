@@ -255,6 +255,27 @@ h3:hover {
   display: none;
 }
 
+/* Side Menu styling*/
+.side-menu-btn {
+  margin-left: 10px;
+}
+
+.side-menu-btn button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.side-menu-btn img {
+  width: 30px;
+  height: 30px;
+}
+
+.menu-icon {
+  display: none;
+}
+
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
   .menu-icon {
@@ -269,6 +290,10 @@ h3:hover {
   }
   .header-buttons {
     margin-right: 10px;
+  }
+  .side-menu-btn img {
+    width: 25px;
+    height: 25px;
   }
 }
 /* Navbar stylings */
