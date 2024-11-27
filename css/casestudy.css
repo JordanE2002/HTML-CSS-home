@@ -2,7 +2,7 @@
 .banner-text {
   position: relative;
   text-align: center;
-  color: white;
+  color: var(--default-white);
   font-family: "Poppins", sans-serif;
   font-size: 32px;
   font-weight: 700;
@@ -11,7 +11,6 @@
 
 /* Adding positions to it*/
 .banner-text::after {
-  content: "";
   position: absolute;
   bottom: -20px;
   left: 50%;
@@ -20,7 +19,6 @@
   height: 0;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-top: 15px solid #1436e1;
 }
 
 /* Adding positions for pictures */
@@ -46,7 +44,6 @@
 /* Arrow banner */
 .arrow-banner-section {
   position: relative;
-  background-color: #1436e1;
   padding-top: 50px;
   padding-bottom: 50px;
 }
