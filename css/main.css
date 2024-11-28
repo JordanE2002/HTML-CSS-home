@@ -934,12 +934,10 @@ h3:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 30%;
   background-color: var(--default-white);
-  padding: 10px;
   border-radius: 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -974,6 +972,10 @@ h3:hover {
 
 .flexbox-item:nth-child(2) h3 {
   color: var(--services-colour5);
+}
+
+.flexbox-item:nth-child(3) h3 {
+  color: #db8c0d;
 }
 
 /* Text inside the flexbox item */
