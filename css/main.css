@@ -528,7 +528,6 @@ h3:hover {
 .service-flexbox-logo-container {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100%;
   margin-bottom: 15px;
 }
