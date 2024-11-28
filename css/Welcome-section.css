@@ -59,13 +59,21 @@
   cursor: pointer;
 }
 
-/* Reviews color button */
+/* Reviews color button, the ohvered colors are paceholder for now */
 .reviews-btn:nth-child(1) {
   background-color: #4387f6;
 }
 
+.reviews-btn:nth-child(1):hover {
+  background-color: darkblue;
+}
+
 .reviews-btn:nth-child(2) {
   background-color: #00b67b;
+}
+
+.reviews-btn:nth-child(2):hover {
+  background-color: darkgreen;
 }
 
 /* Contact button stylings */
@@ -74,6 +82,10 @@
   color: var(--default-white);
   border: none;
   cursor: pointer;
+}
+
+.info-btn:hover {
+  background-color: black;
 }
 
 /* Stars styling */
