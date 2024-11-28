@@ -282,6 +282,9 @@ h3:hover {
     display: block;
     font-size: 24px;
   }
+  .logo {
+    left: 5px;
+  }
   .search-bar input {
     width: 150px;
     background-color: #e0e0e0;
@@ -293,7 +296,7 @@ h3:hover {
     color: #666;
   }
   .header-buttons {
-    margin-right: 10px;
+    display: none;
   }
   .side-menu-btn img {
     width: 25px;

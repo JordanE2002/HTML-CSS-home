@@ -112,6 +112,9 @@
         display: block;
         font-size: 24px;
     }
+    .logo{
+    left: 5px;
+    }
 
     .search-bar input {
         width: 150px;
@@ -126,7 +129,7 @@
     }
 
     .header-buttons {
-        margin-right: 10px;
+        display: none;;
     }
 
     .side-menu-btn img {
