@@ -10,27 +10,27 @@
 
 /* Flexbox picture styling */
 .news-item {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 30%; 
-    background-color: var(--default-white); 
-    border-radius: 0; 
-    position: relative; 
+    background-color: var(--default-white);  
+    padding: 15px;  
+    border-radius: 8px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
- 
+    border: 1px solid grey;
 }
-/*Tempary fix to fix heading position issue on smaller screens */
-.news-item h3{
+
+/* Temporary fix to fix heading position issue on smaller screens */
+.news-item h3 {
     margin-left: 0; 
     margin-right: 0;
     text-align: center; 
+    text-decoration: none;
 }
-
-
 
 /* Hover effect for flexbox items */
 .news-item:hover {
@@ -44,13 +44,12 @@
     width: 100%; 
     height: auto;
     object-fit: cover; 
-    border-radius: 0; 
+    border-radius: 8px;  
     margin-bottom: 10px; 
 }
 
 /* Headings */
-
-.news-item {
+.news-item h3 {
     font-weight: 600;
     font-size: 1rem;
     line-height: 1.5rem;
@@ -59,19 +58,14 @@
 
 .news-item:nth-child(1) h3 {
     color: #db8c0d;
-   
 }
 
 .news-item:nth-child(2) h3 {
     color: var(--services-colour5);
-
 }
-
-
 
 .news-item:nth-child(3) h3 {
     color: #db8c0d;
-   
 }
 
 /* Text inside the flexbox item */
@@ -106,9 +100,7 @@
     font-weight: 400;
 }
 
-
-
-.news-item:nth-child(2) .button-casestudy {
+.news-item:nth-child(2) .news-button {
     background-color: var(--services-colour5);
     border-color: var(--services-colour5);
 }
@@ -149,7 +141,7 @@
 .posted-info p {
     font-size: 0.9rem;
     margin: 0;
-    font-family: Poppins, sans-serif;
+    font-family: var(--poppins);
 }
 
 /* Responsive Design */
@@ -160,7 +152,7 @@
     }
 
     .news-item {
-        width: 80%;
+        width: 80%; 
         margin-bottom: 20px; 
     }
 }
