@@ -121,3 +121,13 @@
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     z-index: -1;
 }
+
+
+/* Takes the mennu away for smaller screens  */
+@media (max-width: 768px) {
+    .navbar, .nav-container, .nav-menu, .nav-icon, .nav-item, .dropdown-menu{
+        display: none;
+
+    
+    }
+    }
