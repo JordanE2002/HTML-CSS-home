@@ -1,18 +1,18 @@
 /* slider section */
-.static-image {
+.slider-image {
   position: relative;
   width: 100%;
   height: auto;
 }
 
-.static-image img {
+.slider-image img {
   display: block;
   width: 100%;
   height: auto;
   z-index: 0;
 }
 
-.static-image .overlay-content {
+.slider-image .overlay-content {
   position: absolute;
   top: 50%;
   left: 30px;
@@ -22,20 +22,20 @@
   max-width: 400px;
 }
 
-.static-image .overlay-content h4 {
+.slider-image .overlay-content h4 {
   font-size: 2rem;
   margin-bottom: 15px;
   font-weight: bold;
   line-height: 1.4;
 }
 
-.static-image .overlay-content p {
+.slider-image .overlay-content p {
   font-size: 1rem;
   margin-bottom: 20px;
   line-height: 1.5;
 }
 
-.static-image .slider-button {
+.slider-image .slider-button {
   display: inline-block;
   background-color: #926fb1;
   color: #fff;
@@ -48,13 +48,13 @@
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.static-image .slider-button:hover {
+.slider-image .slider-button:hover {
   background-color: #6c4fa4;
   transform: translateY(-3px);
 }
 
 @media (max-width: 768px) {
-  .static-image .overlay-content {
+  .slider-image .overlay-content {
       left: 20px;
       max-width: 90%;
       text-align: center;
@@ -62,15 +62,15 @@
       transform: translateY(-50%);
   }
 
-  .static-image .overlay-content h4 {
+  .slider-image .overlay-content h4 {
       font-size: 1.5rem;
   }
 
-  .static-image .overlay-content p {
+  .slider-image .overlay-content p {
       font-size: 0.875rem;
   }
 
-  .static-image .slider-button {
+  .slider-image .slider-button {
       font-size: 1rem;
       padding: 10px 20px;
   }
