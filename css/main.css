@@ -4,110 +4,40 @@ body {
 }
 
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
 
-.container {
+.layout-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  .container {
+  .layout-wrapper {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  .container {
+  .layout-wrapper {
     width: 970px;
   }
 }
 @media (min-width: 1260px) {
-  .container {
+  .layout-wrapper {
     width: 1200px;
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-body {
-  background-color: #f4f4f4;
-}
-
-.header {
-  background-color: #333645;
-  padding: 15px 20px;
-}
-
-.header .logo {
-  width: 150px;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.icon-section {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.icon-box {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 250px;
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}
-
-.icon-box:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.icon img {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 15px;
-}
-
-.icon-box h3 {
-  font-size: 1.2rem;
-  color: #333645;
-  margin-bottom: 10px;
-}
-
-.icon-box p {
-  font-size: 0.9rem;
-  color: #666;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .icon-section {
-    flex-direction: column;
-    align-items: center;
-  }
-}
 /* font variables */
 /*default white */
 :root {
@@ -181,6 +111,14 @@ h3:hover {
   background-color: var(--default-white);
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /* Logo styling */
 .logo img {
   max-width: 100%;
@@ -194,6 +132,15 @@ h3:hover {
   /*These mesurements are not permement, i just wanted a rough esiimate on where they are */
   margin-left: auto;
   margin-right: -150px;
+}
+
+.header {
+  background-color: #333645;
+  padding: 15px 20px;
+}
+
+.header .logo {
+  width: 150px;
 }
 
 /* Button positions */
@@ -385,14 +332,14 @@ h3:hover {
 
 /* Dropdown menu styling */
 .dropdown-menu {
-  position: fixed; /* Fixed to viewport for center positioning */
-  top: 50%; /* Centered vertically */
-  left: 50%; /* Centered horizontally */
-  transform: translate(-50%, -50%); /* Perfect centering */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: #007bff;
   padding: 20px 40px;
   border-radius: 10px;
-  display: none; /* Hidden by default */
+  display: none;
   z-index: 10;
   color: #fff;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);

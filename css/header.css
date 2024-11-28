@@ -7,6 +7,14 @@
   background-color: var(--default-white);
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /* Logo styling */
 .logo img {
   max-width: 100%;
@@ -20,6 +28,15 @@
   /*These mesurements are not permement, i just wanted a rough esiimate on where they are */
   margin-left: auto;
   margin-right: -150px;
+}
+
+.header {
+  background-color: #333645;
+  padding: 15px 20px;
+}
+
+.header .logo {
+  width: 150px;
 }
 
 /* Button positions */

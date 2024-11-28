@@ -68,14 +68,14 @@
 
 /* Dropdown menu styling */
 .dropdown-menu {
-  position: fixed; /* Fixed to viewport for center positioning */
-  top: 50%; /* Centered vertically */
-  left: 50%; /* Centered horizontally */
-  transform: translate(-50%, -50%); /* Perfect centering */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: #007bff;
   padding: 20px 40px;
   border-radius: 10px;
-  display: none; /* Hidden by default */
+  display: none;
   z-index: 10;
   color: #fff;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
