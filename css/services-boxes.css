@@ -73,13 +73,13 @@
 
 /* Button styling */
 .service-button {
-  font-family: Poppins, sans-serif;
+  font-family: var(poppins);
   letter-spacing: 0.4px;
   box-sizing: border-box;
   background: transparent;
   text-decoration: none;
   display: inline-block;
-  margin-top: 10px; /* Space between text and button */
+  margin-top: 10px;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;

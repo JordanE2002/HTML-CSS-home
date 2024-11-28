@@ -568,13 +568,13 @@ h3:hover {
 
 /* Button styling */
 .service-button {
-  font-family: Poppins, sans-serif;
+  font-family: var(poppins);
   letter-spacing: 0.4px;
   box-sizing: border-box;
   background: transparent;
   text-decoration: none;
   display: inline-block;
-  margin-top: 10px; /* Space between text and button */
+  margin-top: 10px;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -769,7 +769,6 @@ h3:hover {
 /* Hovered images */
 .pictures-section img:hover {
   filter: grayscale(0%);
-  transform: scale(1.05);
 }
 
 /*ONLY FOR CASE STUDIES/*
@@ -785,7 +784,6 @@ h3:hover {
   position: absolute;
   bottom: 150px;
   left: 50%;
-  transform: translate(-50%, 0);
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.7);
   color: #fff;
