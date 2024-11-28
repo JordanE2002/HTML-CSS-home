@@ -542,9 +542,7 @@ h3:hover {
 }
 
 /* h3 styling */
-.service-flexbox-item h3 {
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+.service-flexbox-item h4 {
   letter-spacing: 0.4px;
   text-align: center;
   box-sizing: border-box;
@@ -651,7 +649,7 @@ h3:hover {
   color: var(--services-colour1);
   background-color: var(--default-white);
 }
-.service-flexbox-item:nth-child(1):hover p, .service-flexbox-item:nth-child(1):hover h3 {
+.service-flexbox-item:nth-child(1):hover p, .service-flexbox-item:nth-child(1):hover h4 {
   color: var(--default-white);
 }
 
@@ -663,7 +661,7 @@ h3:hover {
   color: var(--services-colour2);
   background-color: var(--default-white);
 }
-.service-flexbox-item:nth-child(2):hover p, .service-flexbox-item:nth-child(2):hover h3 {
+.service-flexbox-item:nth-child(2):hover p, .service-flexbox-item:nth-child(2):hover h4 {
   color: var(--default-white);
 }
 
@@ -675,7 +673,7 @@ h3:hover {
   color: var(--services-colour3);
   background-color: var(--default-white);
 }
-.service-flexbox-item:nth-child(3):hover p, .service-flexbox-item:nth-child(3):hover h3 {
+.service-flexbox-item:nth-child(3):hover p, .service-flexbox-item:nth-child(3):hover h4 {
   color: var(--default-white);
 }
 
