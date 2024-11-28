@@ -1,5 +1,5 @@
 /* Flexbox container for the case studies */
-.flexbox-container {
+.news-container {
     display: flex;
     justify-content: center; 
     gap: 20px; 
@@ -9,7 +9,7 @@
 }
 
 /* Flexbox picture styling */
-.flexbox-item {
+.news-item {
 
     display: flex;
     flex-direction: column;
@@ -33,14 +33,14 @@
 }
 
 /* Hover effect for flexbox items */
-.flexbox-item:hover {
+.news-item:hover {
     transform: translateY(-10px); 
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
     cursor: pointer;
 }
 
 /* Image styling */
-.flexbox-item img {
+.news-item img {
     width: 100%; 
     height: auto;
     object-fit: cover; 
@@ -50,32 +50,32 @@
 
 /* Headings */
 
-.flexbox-item {
+.news-item {
     font-weight: 600;
     font-size: 1rem;
     line-height: 1.5rem;
     font-family: inherit;
 }
 
-.flexbox-item:nth-child(1) h3 {
+.news-item:nth-child(1) h3 {
     color: #db8c0d;
    
 }
 
-.flexbox-item:nth-child(2) h3 {
+.news-item:nth-child(2) h3 {
     color: var(--services-colour5);
 
 }
 
 
 
-.flexbox-item:nth-child(3) h3 {
+.news-item:nth-child(3) h3 {
     color: #db8c0d;
    
 }
 
 /* Text inside the flexbox item */
-.flexbox-item p {
+.news-item p {
    font-weight: 600;
    font-size: 0.8125rem;
    line-height: 1.375rem;
@@ -84,7 +84,7 @@
 }
 
 /* Buttons */
-.button-casestudy {
+.news-button {
     font-family: var(--poppins);
     letter-spacing: 0.4px;
     box-sizing: border-box;
@@ -108,7 +108,7 @@
 
 
 
-.flexbox-item:nth-child(2) .button-casestudy {
+.news-item:nth-child(2) .button-casestudy {
     background-color: var(--services-colour5);
     border-color: var(--services-colour5);
 }
@@ -123,7 +123,7 @@
 }
 
 /* Container for the logo and the posted info */
-.flexbox-logo-container {
+.news-logo-container {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -133,12 +133,12 @@
 }
 
 /* Logo adjustments */
-.flexbox-logo {
+.news-logo {
     margin-right: 10px;
 }
 
 /* Logo image styling */
-.flexbox-logo img {
+.news-logo img {
     width: 40px; 
     height: auto;
     border-radius: 100%; 
@@ -154,12 +154,12 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .flexbox-container {
+    .news-container {
         flex-direction: column; 
         align-items: center; 
     }
 
-    .flexbox-item {
+    .news-item {
         width: 80%;
         margin-bottom: 20px; 
     }
