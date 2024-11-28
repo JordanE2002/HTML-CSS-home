@@ -15,22 +15,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    
-
-
-
- 
     width: 30%; 
     background-color: var(--default-white); 
-
     border-radius: 0; 
-    
     position: relative; 
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
-
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
  
 }
+/*Tempary fix to fix heading position issue on smaller screens */
+.news-item h3{
+    margin-left: 0; 
+    margin-right: 0;
+    text-align: center; 
+}
+
+
 
 /* Hover effect for flexbox items */
 .news-item:hover {

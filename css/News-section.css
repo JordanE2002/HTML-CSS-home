@@ -14,12 +14,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
   width: 30%;
   background-color: var(--default-white);
   border-radius: 0;
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/*Tempary fix to fix heading position issue on smaller screens */
+.news-item h3 {
+  margin-left: 0; /* Reset any unwanted left margin */
+  margin-right: 0; /* Reset any unwanted right margin */
+  text-align: center; /* Ensure it's centered */
 }
 
 /* Hover effect for flexbox items */
