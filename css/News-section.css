@@ -23,9 +23,9 @@
 
 /*Tempary fix to fix heading position issue on smaller screens */
 .news-item h3 {
-  margin-left: 0; /* Reset any unwanted left margin */
-  margin-right: 0; /* Reset any unwanted right margin */
-  text-align: center; /* Ensure it's centered */
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
 }
 
 /* Hover effect for flexbox items */

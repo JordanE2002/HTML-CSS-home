@@ -284,9 +284,13 @@ h3:hover {
   }
   .search-bar input {
     width: 150px;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    color: #333;
   }
   .search-btn {
     right: 5px;
+    color: #666;
   }
   .header-buttons {
     margin-right: 10px;
@@ -813,8 +817,8 @@ h3:hover {
   transform: translate(-50%, -10px);
 }
 
-/* Clients section */
-.clients-section {
+/* Welcome section */
+.welcome-section {
   background-color: var(--footer-welcome);
   color: var(--default-white);
   display: flex;
@@ -824,7 +828,7 @@ h3:hover {
   padding: 40px 20px;
 }
 
-/*I did not had to specify the h1 but its been messing up recently/ used for decoring the other headings for now */
+/* Section headings */
 .left-content h1,
 .right-content h1 {
   color: var(--default-white);
@@ -842,39 +846,40 @@ h3:hover {
   padding: 20px;
 }
 
-/* Left side buttons styling */
+/* Left side buttons */
 .left-buttons {
   display: flex;
+  flex-wrap: wrap; /* Allows buttons to wrap */
   gap: 10px;
   margin-top: 20px;
 }
 
-/* Right side buttons styling */
+/* Right side buttons */
 .right-buttons {
   display: flex;
+  flex-wrap: wrap; /* Allows buttons to wrap */
   gap: 10px;
   margin-top: 20px;
 }
 
-/* Button positions */
+/* General Button styling */
 .btn {
-  height: 56px;
-  line-height: 46px;
-  font-size: 1.125rem;
-  padding: 5px 15px;
+  padding: 10px 15px; /* Adjusted for flexible sizing */
+  font-size: 1rem;
   text-transform: uppercase;
   border-radius: 3px;
-  white-space: normal;
+  white-space: nowrap; /* Prevents text wrapping */
+  display: inline-block; /* Adapts to content size */
+  width: auto;
 }
 
-/* Reviews color button */
+/* Reviews color buttons */
 .reviews-btn {
   color: var(--default-white);
   border: none;
   cursor: pointer;
 }
 
-/* Reviews color button, the ohvered colors are paceholder for now */
 .reviews-btn:nth-child(1) {
   background-color: #4387f6;
 }
@@ -891,7 +896,7 @@ h3:hover {
   background-color: darkgreen;
 }
 
-/* Contact button stylings */
+/* Information buttons */
 .info-btn {
   background-color: #272936;
   color: var(--default-white);
@@ -899,9 +904,9 @@ h3:hover {
   cursor: pointer;
 }
 
-/* Another placeholder
-.info-btn:hover{
- background-color: black;
+/* Placeholder hover style */
+.info-btn:hover {
+  background-color: black;
 }
 
 /* Stars styling */
@@ -910,22 +915,28 @@ h3:hover {
   font-size: 1.5rem;
 }
 
-/* Testimonials author styling */
+/* Author styles */
 .testimonial-author {
   display: block;
   margin-top: 10px;
-  font-style: var(poppins);
+  font-family: "Poppins", sans-serif;
 }
 
 /* Responsive design */
 @media (max-width: 768px) {
-  .clients-section {
+  .welcome-section {
     flex-direction: column;
+  }
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    width: 100%;
   }
   .left-buttons,
   .right-buttons {
-    margin-left: 10px;
-    margin-right: 10px;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 /* Flexbox container for the case studies */
@@ -953,9 +964,9 @@ h3:hover {
 
 /*Tempary fix to fix heading position issue on smaller screens */
 .news-item h3 {
-  margin-left: 0; /* Reset any unwanted left margin */
-  margin-right: 0; /* Reset any unwanted right margin */
-  text-align: center; /* Ensure it's centered */
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
 }
 
 /* Hover effect for flexbox items */
