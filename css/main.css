@@ -738,7 +738,7 @@ h3:hover {
     width: 80%;
   }
   .service-flexbox-item:nth-child(n+4) {
-    width: 90%;
+    width: 80%;
   }
   .service-flexbox-logo img {
     max-width: 100px;
