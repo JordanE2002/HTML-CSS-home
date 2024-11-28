@@ -84,8 +84,9 @@
   cursor: pointer;
 }
 
-.info-btn:hover {
-  background-color: black;
+/* Another placeholder
+.info-btn:hover{
+ background-color: black;
 }
 
 /* Stars styling */
