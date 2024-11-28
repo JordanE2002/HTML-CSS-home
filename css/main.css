@@ -391,12 +391,14 @@ h3:hover {
   }
 }
 /* slider section */
+/*Adding slider image propities for later */
 .slider-image {
   position: relative;
   width: 100%;
   height: auto;
 }
 
+/*Adding details for the image itself */
 .slider-image img {
   display: block;
   width: 100%;
@@ -404,6 +406,7 @@ h3:hover {
   z-index: 0;
 }
 
+/*Slider and the text/button details */
 .slider-image .overlay-content {
   position: absolute;
   top: 50%;
