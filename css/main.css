@@ -1237,6 +1237,7 @@ h3:hover {
   font-size: 0.9rem;
 }
 
+/*The bottom left consent button, its a sticky item so its everything if that makes sense */
 /*Was not sure where to put contsent info, so i left it here */
 /* Styling for button */
 #consent {
