@@ -1,6 +1,6 @@
 /*Was not sure where to put contsent info, so i left it here */
 /* Styling for button */
-#manage {
+#consent {
   position: fixed;
   line-height: 22px;
   z-index: 99;
@@ -22,7 +22,7 @@
 }
 
 /* Hover effort for button */
-#manage:hover {
+#consent:hover {
   background-color: var(--consent);
   border-color: var(--consent);
 }
