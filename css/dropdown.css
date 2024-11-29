@@ -130,7 +130,7 @@
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
-  .navbar, .nav-container, .nav-menu, .nav-icon, .nav-item, .dropdown-menu {
+  .nav-container {
     display: none;
   }
 }
