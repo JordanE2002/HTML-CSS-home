@@ -1062,7 +1062,7 @@ h3:hover {
     align-items: center;
   }
   .news-item {
-    width: 80%;
+    width: 100%;
     margin-bottom: 20px;
   }
 }
