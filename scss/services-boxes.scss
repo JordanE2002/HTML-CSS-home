@@ -16,7 +16,7 @@
     flex-direction: column; 
     justify-content: center;
     align-items: center; 
-    background-color: #fff; 
+    background-color: var(--default-white); 
     padding: 15px; 
     border-radius: 8px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
@@ -113,25 +113,25 @@
 .service-flexbox-item:nth-child(1) .service-button {
     background-color: var(--services-colour1); 
     border-color: var(--services-colour1); 
-    color: #fff;
+    color: var(--default-white);
 }
 
 .service-flexbox-item:nth-child(2) .service-button {
     background-color: var(--services-colour2);
     border-color: var(--services-colour2);
-    color: #fff;
+    color: var(--default-white);
 }
 
 .service-flexbox-item:nth-child(3) .service-button {
     background-color: var(--services-colour3);
     border-color: var(--services-colour3);
-    color: #fff;
+    color: var(--default-white);
 }
 
 .service-flexbox-item:nth-child(4) .service-button {
     background-color: var(--services-colour4);
     border-color: var(--services-colour4);
-    color: #fff;
+    color: var(--default-white);
 }
 
 
@@ -139,20 +139,20 @@
 .service-flexbox-item:nth-child(5) .service-button {
     background-color: var(--services-colour5);
     border-color: var(--services-colour5);
-    color: #fff;
+    color: var(--default-white);
 }
 
 .service-flexbox-item:nth-child(6) .service-button {
     background-color: var(--services-colour6);
     border-color: var(--services-colour6);
-    color: #fff;
+    color: var(--default-white);
 }
 
 .service-flexbox-item:nth-child(7) .service-button {
     
     background-color: var(--services-colour7);
     border-color: var(--services-colour7);
-    color: #fff;
+    color: var(--default-white);
 }
 
 
