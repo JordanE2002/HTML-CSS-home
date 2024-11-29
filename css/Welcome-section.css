@@ -20,6 +20,15 @@
   color: var(--default-white);
 }
 
+/*Not sure why it works with nth child 2 not 1 though, but i will try to fix */
+.left-content p:nth-child(2) {
+  font-weight: bold;
+}
+
+.right-content p {
+  font-weight: bold;
+}
+
 /* Left side content */
 .left-content {
   flex: 1;
