@@ -38,9 +38,10 @@
   line-height: 1.5;
 }
 
+/*Random colour for now */
 .slider-image .slider-button {
   display: inline-block;
-  background-color: #926fb1;
+  background-color: pink;
   color: #fff;
   padding: 12px 30px;
   font-size: 1.25rem;
@@ -52,7 +53,6 @@
 }
 
 .slider-image .slider-button:hover {
-  background-color: #6c4fa4;
   transform: translateY(-3px);
 }
 
