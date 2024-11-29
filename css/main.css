@@ -238,7 +238,7 @@ h3:hover {
   .search-bar input {
     width: calc(100% - 40px);
     max-width: none;
-    background-color: #e0e0e0;
+    background-color: var(--default-white);
     border: 1px solid #ccc;
     color: #333;
   }
