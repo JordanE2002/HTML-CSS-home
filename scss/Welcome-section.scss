@@ -24,6 +24,20 @@
 }
 
 
+.left-content p, .right-content p{
+    
+    font-family: var(--poppins);
+    font-size: 1rem;
+    letter-spacing: .4px;
+    color: #fff;
+    box-sizing: border-box;
+    margin: 0 0 10px;
+    line-height: 1.875rem;
+   
+
+}
+
+
 /*Not sure why it works with nth child 2 not 1 though, but i will try to fix */
 
 .left-content p:nth-child(2){
@@ -37,7 +51,6 @@
     font-weight: bold;
 
 }
-
 
 
 
