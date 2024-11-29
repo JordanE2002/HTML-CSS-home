@@ -801,7 +801,12 @@ h3:hover {
 /* Section headings */
 .left-content h1,
 .right-content h1 {
+  letter-spacing: 0.4px;
+  font-family: var(--poppins);
+  font-size: 2.25rem;
+  box-sizing: border-box;
   color: var(--default-white);
+  font-weight: 600;
 }
 
 /* Left side content */
