@@ -448,6 +448,7 @@ h3:hover {
   transform: translateY(-3px);
 }
 
+/*Responsive design*/
 @media (max-width: 768px) {
   .slider-image .overlay-content {
     left: 20px;
